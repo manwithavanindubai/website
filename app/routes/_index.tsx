@@ -559,7 +559,7 @@ export default function Index() {
               <h3 className="font-semibold mb-3 text-center text-lg">
                 Working Hours
               </h3>
-              <p className="text-gray-600 text-center">9:00 AM - 7:00 PM</p>
+              <p className="text-gray-600 text-center">24/7 Available</p>
               <p className="text-gray-500 text-sm text-center mt-1">
                 7 Days a Week
               </p>
@@ -570,9 +570,7 @@ export default function Index() {
               <h3 className="font-semibold mb-3 text-center text-lg">
                 Location
               </h3>
-              <p className="text-gray-600 text-center">
-                Al Quoz Industrial Area 2
-              </p>
+              <p className="text-gray-600 text-center">Dubai, UAE</p>
               <p className="text-gray-600 text-center">Dubai, UAE</p>
             </div>
           </div>
