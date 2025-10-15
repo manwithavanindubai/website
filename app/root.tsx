@@ -30,7 +30,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="Professional Man with Van services in Dubai. Affordable pickup truck rental with driver, delivery van hire, luggage delivery, and cargo transport. Call 055 1972617"
+          content="Professional Man with Van services in Dubai. Affordable pickup truck rental with driver, delivery van hire, luggage delivery, and cargo transport. Call +971564639117"
         />
         <meta
           name="keywords"

@@ -6,7 +6,7 @@ export const meta: MetaFunction = () => {
     {
       name: "description",
       content:
-        "Professional Man with Van services in Dubai. Affordable pickup truck rental with driver, delivery van hire, luggage delivery, and cargo transport. Call 055 1972617",
+        "Professional Man with Van services in Dubai. Affordable pickup truck rental with driver, delivery van hire, luggage delivery, and cargo transport. Call +971564639117",
     },
   ];
 };
@@ -36,17 +36,30 @@ export default function Index() {
 
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
             <a
-              href="tel:0551972617"
+              href="tel:+971564639117"
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
             >
-              📞 Call 055 1972617
+              📞 Call +971 56 463 9117
             </a>
             <a
-              href="https://wa.me/971551972617"
+              href="https://wa.me/971564639117"
               className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
             >
               💬 WhatsApp Us
             </a>
+          </div>
+
+          {/* Hero Image */}
+          <div className="mb-12">
+            <img
+              src="/slide1.png"
+              alt="Man with Van Dubai - Professional Moving Services"
+              className="mx-auto rounded-lg shadow-xl max-w-full h-auto"
+              style={{ maxHeight: "400px" }}
+              onError={(e) => {
+                e.currentTarget.style.display = 'none';
+              }}
+            />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
@@ -85,8 +98,15 @@ export default function Index() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-              <div className="h-48 bg-gray-200 flex items-center justify-center">
-                <span className="text-6xl">🚛</span>
+              <div className="h-48 bg-gray-100 overflow-hidden">
+                <img
+                  src="/pickup-truck-rental-dubai.jpeg"
+                  alt="1.5 Ton Pickup Truck Dubai"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  onError={(e) => {
+                    e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDIwMCAxMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMTIwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjEwMCIgeT0iNjAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmaWxsPSIjNjc3NDhGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+MS41IFRvbiBQaWNrdXA8L3RleHQ+Cjwvc3ZnPgo=';
+                  }}
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">1.5 Ton Pickup</h3>
@@ -99,7 +119,7 @@ export default function Index() {
                     Best for: Large Items
                   </span>
                   <a
-                    href="tel:0551972617"
+                    href="tel:+971564639117"
                     className="text-blue-600 hover:text-blue-800"
                   >
                     Book Now →
@@ -109,8 +129,15 @@ export default function Index() {
             </div>
 
             <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-              <div className="h-48 bg-gray-200 flex items-center justify-center">
-                <span className="text-6xl">🚐</span>
+              <div className="h-48 bg-gray-100 overflow-hidden">
+                <img
+                  src="/hiace-delivery-van-dubai.jpg"
+                  alt="Hiace Delivery Van Dubai"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  onError={(e) => {
+                    e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDIwMCAxMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMTIwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjEwMCIgeT0iNjAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmaWxsPSIjNjc3NDhGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+RGVsaXZlcnkgVmFuPC90ZXh0Pgo8L3N2Zz4K';
+                  }}
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">Delivery Van</h3>
@@ -123,7 +150,7 @@ export default function Index() {
                     Best for: Business Use
                   </span>
                   <a
-                    href="tel:0551972617"
+                    href="tel:+971564639117"
                     className="text-blue-600 hover:text-blue-800"
                   >
                     Book Now →
@@ -133,8 +160,15 @@ export default function Index() {
             </div>
 
             <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-              <div className="h-48 bg-gray-200 flex items-center justify-center">
-                <span className="text-6xl">🛻</span>
+              <div className="h-48 bg-gray-100 overflow-hidden">
+                <img
+                  src="/1-ton-pickup-truck-man-van-dubai.jpg"
+                  alt="1 Ton Pickup Truck Man Van Dubai"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  onError={(e) => {
+                    e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDIwMCAxMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMTIwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjEwMCIgeT0iNjAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmaWxsPSIjNjc3NDhGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+MSBUb24gUGlja3VwPC90ZXh0Pgo8L3N2Zz4K';
+                  }}
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">1 Ton Pickup</h3>
@@ -147,7 +181,7 @@ export default function Index() {
                     Best for: Personal Use
                   </span>
                   <a
-                    href="tel:0551972617"
+                    href="tel:+971564639117"
                     className="text-blue-600 hover:text-blue-800"
                   >
                     Book Now →
@@ -266,15 +300,26 @@ export default function Index() {
             Get in Touch
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="text-3xl mb-4">📞</div>
               <h3 className="font-semibold mb-2">Phone</h3>
               <a
-                href="tel:0551972617"
+                href="tel:+971564639117"
                 className="text-blue-600 hover:text-blue-800 text-lg"
               >
-                055 1972617
+                +971 56 463 9117
+              </a>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="text-3xl mb-4">📧</div>
+              <h3 className="font-semibold mb-2">Email</h3>
+              <a
+                href="mailto:manwithavanindubai@gmail.com"
+                className="text-blue-600 hover:text-blue-800 text-lg"
+              >
+                manwithavanindubai@gmail.com
               </a>
             </div>
 
@@ -298,13 +343,13 @@ export default function Index() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a
-                href="tel:0551972617"
+                href="tel:+971564639117"
                 className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
               >
                 Call Now
               </a>
               <a
-                href="https://wa.me/971551972617"
+                href="https://wa.me/971564639117"
                 className="bg-green-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors"
               >
                 WhatsApp
@@ -324,18 +369,24 @@ export default function Index() {
                 Professional man and van services in Dubai. We provide reliable,
                 affordable transport solutions for businesses and individuals.
               </p>
-              <div className="flex gap-4">
+              <div className="flex flex-col gap-2">
                 <a
-                  href="tel:0551972617"
+                  href="tel:+971564639117"
                   className="text-blue-400 hover:text-blue-300"
                 >
-                  📞 055 1972617
+                  📞 +971 56 463 9117
                 </a>
                 <a
-                  href="https://wa.me/971551972617"
+                  href="https://wa.me/971564639117"
                   className="text-green-400 hover:text-green-300"
                 >
                   💬 WhatsApp
+                </a>
+                <a
+                  href="mailto:manwithavanindubai@gmail.com"
+                  className="text-gray-400 hover:text-gray-300"
+                >
+                  📧 manwithavanindubai@gmail.com
                 </a>
               </div>
             </div>
@@ -355,7 +406,8 @@ export default function Index() {
             <div>
               <h4 className="font-semibold mb-4">Contact Info</h4>
               <div className="space-y-2 text-gray-300">
-                <p>📞 055 1972617</p>
+                <p>📞 +971 56 463 9117</p>
+                <p>📧 manwithavanindubai@gmail.com</p>
                 <p>⏰ 9:00 AM - 7:00 PM</p>
                 <p>📍 Al Quoz Industrial Area 2</p>
                 <p>Dubai, UAE</p>
