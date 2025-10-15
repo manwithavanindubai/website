@@ -682,8 +682,7 @@ export default function Index() {
                 <p>📞 +971 56 463 9117</p>
                 <p className="break-words">📧 manwithavanindubai@gmail.com</p>
                 <p>⏰ 24/7 Available</p>
-                <p>📍 Al Quoz Industrial Area 2</p>
-                <p>Dubai, UAE</p>
+                <p>📍 Dubai, UAE</p>
               </div>
             </div>
           </div>
