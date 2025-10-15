@@ -627,8 +627,8 @@ export default function Index() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="md:col-span-2">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div className="md:col-span-2 lg:col-span-2">
               <h3 className="text-2xl font-bold mb-4">Van with Man Dubai</h3>
               <p className="text-gray-300 mb-4">
                 Professional man and van services in Dubai. We provide reliable,
@@ -677,11 +677,11 @@ export default function Index() {
               </ul>
             </div>
 
-            <div>
+            <div className="lg:col-span-1">
               <h4 className="font-semibold mb-4">Contact Info</h4>
               <div className="space-y-2 text-gray-300">
                 <p>📞 +971 56 463 9117</p>
-                <p>📧 manwithavanindubai@gmail.com</p>
+                <p className="break-words">📧 manwithavanindubai@gmail.com</p>
                 <p>⏰ 9:00 AM - 7:00 PM</p>
                 <p>📍 Al Quoz Industrial Area 2</p>
                 <p>Dubai, UAE</p>
@@ -690,7 +690,7 @@ export default function Index() {
           </div>
 
           <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2023 Van with Man Dubai. All Rights Reserved.</p>
+            <p>&copy; 2025 Van with Man Dubai. All Rights Reserved.</p>
           </div>
         </div>
       </footer>
