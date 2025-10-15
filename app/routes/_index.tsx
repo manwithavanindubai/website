@@ -669,7 +669,6 @@ export default function Index() {
               <h4 className="font-semibold mb-4">Services</h4>
               <ul className="space-y-2 text-gray-300">
                 <li>Man with Van</li>
-                <li>Pickup Truck Rental</li>
                 <li>Delivery Van Hire</li>
                 <li>Luggage Delivery</li>
                 <li>Cargo Transport</li>
@@ -682,7 +681,7 @@ export default function Index() {
               <div className="space-y-2 text-gray-300">
                 <p>📞 +971 56 463 9117</p>
                 <p className="break-words">📧 manwithavanindubai@gmail.com</p>
-                <p>⏰ 9:00 AM - 7:00 PM</p>
+                <p>⏰ 24/7 Available</p>
                 <p>📍 Al Quoz Industrial Area 2</p>
                 <p>Dubai, UAE</p>
               </div>
