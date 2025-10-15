@@ -570,8 +570,8 @@ export default function Index() {
               <h3 className="font-semibold mb-3 text-center text-lg">
                 Location
               </h3>
-              <p className="text-gray-600 text-center">Dubai, UAE</p>
-              <p className="text-gray-600 text-center">Dubai, UAE</p>
+              <p className="text-gray-600 text-center">Dubai</p>
+              <p className="text-gray-600 text-center">UAE</p>
             </div>
           </div>
 
