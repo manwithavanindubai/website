@@ -570,8 +570,10 @@ export default function Index() {
               <h3 className="font-semibold mb-3 text-center text-lg">
                 Location
               </h3>
+               <a
+                href="https://maps.app.goo.gl/dXww1hmEHwpzetYP7">
               <p className="text-gray-600 text-center">Dubai</p>
-              <p className="text-gray-600 text-center">UAE</p>
+              <p className="text-gray-600 text-center">UAE</p>   </a>
             </div>
           </div>
 
@@ -618,16 +620,6 @@ export default function Index() {
                 📧 manwithavanindubai@gmail.com
               </a>
             </div>
-          </div>
-        </div>
-
-        
-          <div className="bg-gradient-to-r from-blue-600 to-green-600 p-10 rounded-xl text-white shadow-xl">
-            <div className="text-center mb-8">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57829.39275726068!2d55.173316400000004!3d25.056562949999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47037bf8d1d9e921%3A0xd01ec7aa2f8bc823!2sMan%20with%20a%20Van%20Dubai!5e0!3m2!1sen!2sae!4v1763655849462!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      
-
-         </div>
           </div>
         </div>
       </section>
