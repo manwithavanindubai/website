@@ -570,10 +570,12 @@ export default function Index() {
               <h3 className="font-semibold mb-3 text-center text-lg">
                 Location
               </h3>
-               <a
-                href="https://maps.app.goo.gl/dXww1hmEHwpzetYP7">
-              <p className="text-gray-600 text-center">Dubai</p>
-              <p className="text-gray-600 text-center">UAE</p>   </a>
+                  <a
+                href="mailto:manwithavanindubai@gmail.com"
+                className="text-blue-600 hover:text-blue-800 text-sm block text-center font-medium break-words"
+              >
+                Dubai, UAE
+              </a>
             </div>
           </div>
 
