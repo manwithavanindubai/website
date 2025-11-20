@@ -72,9 +72,9 @@ npm start
 ## Contact Information
 
 The website includes contact details for Van with Man Dubai:
-- **Phone:** +971 56 463 9117
+- **Phone:** +971 52 806 5642
 - **Email:** manwithavanindubai@gmail.com
-- **WhatsApp:** +971 56 463 9117
+- **WhatsApp:** +971 52 806 5642
 - **Location:** Al Quoz Industrial Area 2, Dubai
 - **Hours:** 9:00 AM - 7:00 PM
 
