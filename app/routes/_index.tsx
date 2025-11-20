@@ -568,10 +568,10 @@ export default function Index() {
             <div className="bg-white p-8 rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition-shadow">
               <div className="text-4xl mb-4 text-center">📍</div>
               <h3 className="font-semibold mb-3 text-center text-lg">
-                Location
+                Google Map
               </h3>
                   <a
-                href="mailto:manwithavanindubai@gmail.com"
+                href="https://maps.app.goo.gl/dXww1hmEHwpzetYP7"
                 className="text-blue-600 hover:text-blue-800 text-sm block text-center font-medium break-words"
               >
                 Dubai, UAE
