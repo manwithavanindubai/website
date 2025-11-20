@@ -6,7 +6,7 @@ export const meta: MetaFunction = () => {
     {
       name: "description",
       content:
-        "Professional Man with Van services in Dubai. Affordable pickup truck rental with driver, delivery van hire, luggage delivery, and cargo transport. Call +971564639117",
+        "Professional Man with Van services in Dubai. Affordable pickup truck rental with driver, delivery van hire, luggage delivery, and cargo transport. Call +971528065642",
     },
   ];
 };
@@ -36,13 +36,13 @@ export default function Index() {
 
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
             <a
-              href="tel:+971564639117"
+              href="tel:+971528065642"
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
             >
-              📞 Call +971 56 463 9117
+              📞 Call +971 52 806 5642
             </a>
             <a
-              href="https://wa.me/971564639117"
+              href="https://wa.me/971528065642"
               className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center justify-center gap-2"
             >
               <svg
@@ -251,13 +251,13 @@ export default function Index() {
                   </div>
                   <div className="flex gap-3">
                     <a
-                      href="tel:+971564639117"
+                      href="tel:+971528065642"
                       className="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2"
                     >
                       📞 Call Now
                     </a>
                     <a
-                      href="https://wa.me/971564639117"
+                      href="https://wa.me/971528065642"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex-1 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2"
@@ -342,13 +342,13 @@ export default function Index() {
                   </div>
                   <div className="flex gap-3">
                     <a
-                      href="tel:+971564639117"
+                      href="tel:+971528065642"
                       className="flex-1 bg-green-600 hover:bg-green-700 text-white px-4 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2"
                     >
                       📞 Call Now
                     </a>
                     <a
-                      href="https://wa.me/971564639117"
+                      href="https://wa.me/971528065642"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex-1 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2"
@@ -536,10 +536,10 @@ export default function Index() {
               <div className="text-4xl mb-4 text-center">📞</div>
               <h3 className="font-semibold mb-3 text-center text-lg">Phone</h3>
               <a
-                href="tel:+971564639117"
+                href="tel:+971528065642"
                 className="text-blue-600 hover:text-blue-800 text-lg block text-center font-medium"
               >
-                +971 56 463 9117
+                +971 528 06 5642
               </a>
             </div>
 
@@ -588,13 +588,13 @@ export default function Index() {
 
             <div className="flex flex-col sm:flex-row justify-center gap-6 max-w-md mx-auto">
               <a
-                href="tel:+971564639117"
+                href="tel:+971528065642"
                 className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-center flex items-center justify-center gap-2"
               >
                 📞 Call Now
               </a>
               <a
-                href="https://wa.me/971564639117"
+                href="https://wa.me/971528065642"
                 className="bg-green-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-600 transition-colors text-center flex items-center justify-center gap-2"
               >
                 <svg
@@ -634,13 +634,13 @@ export default function Index() {
               </p>
               <div className="flex flex-col gap-2">
                 <a
-                  href="tel:+971564639117"
+                  href="tel:+971528065642"
                   className="text-blue-400 hover:text-blue-300"
                 >
-                  📞 +971 56 463 9117
+                  📞 +971 52 806 5642 
                 </a>
                 <a
-                  href="https://wa.me/971564639117"
+                  href="https://wa.me/971528065642"
                   className="text-green-400 hover:text-green-300 flex items-center gap-2"
                 >
                   <svg
@@ -677,7 +677,7 @@ export default function Index() {
             <div className="lg:col-span-1">
               <h4 className="font-semibold mb-4">Contact Info</h4>
               <div className="space-y-2 text-gray-300">
-                <p>📞 +971 56 463 9117</p>
+                <p>📞 +971 52 8065642</p>
                 <p className="break-words">📧 manwithavanindubai@gmail.com</p>
                 <p>⏰ 24/7 Available</p>
                 <p>📍 Dubai, UAE</p>
