@@ -1,234 +1,520 @@
-import type { MetaFunction } from "@remix-run/node";
+import type { MetaFunction } from "@remix-run/cloudflare";
 
-export const meta: MetaFunction = () => {
-  return [
-    { title: "Luggage Delivery Dubai | Fast & Secure Luggage Transport" },
-    {
-      name: "description",
-      content:
-        "Reliable luggage delivery in Dubai for airport transfers, hotels, homes and offices. Safe transport for suitcases, bags and boxes across Dubai and the UAE.",
-    },
-    {
-      name: "keywords",
-      content:
-        "luggage delivery Dubai, luggage transport Dubai, airport luggage transfer Dubai, suitcase delivery Dubai, baggage delivery Dubai",
-    },
-  ];
-};
+const phoneDisplay = "+971 52 806 5642";
+const phoneLink = "tel:+971528065642";
+const whatsappLink = "https://wa.me/971528065642";
+
+const luggageTypes = [
+  "Suitcases and travel bags",
+  "Cabin bags and hand luggage",
+  "Multiple family suitcases",
+  "Hotel guest luggage",
+  "Boxes and personal belongings",
+  "Sports bags and equipment bags",
+  "Business and exhibition luggage",
+  "Long-stay and relocation luggage",
+];
+
+const transferOptions = [
+  {
+    title: "Airport to Hotel",
+    text: "Luggage collection from Dubai airport terminals and delivery to hotels, serviced apartments or residences.",
+  },
+  {
+    title: "Hotel to Airport",
+    text: "Scheduled hotel luggage pickup and delivery to the correct airport terminal before your departure.",
+  },
+  {
+    title: "Hotel to Hotel",
+    text: "Convenient luggage transfer when changing hotels, resorts or serviced apartments within Dubai.",
+  },
+  {
+    title: "Home to Hotel",
+    text: "Collection from your home or residence and direct delivery to a hotel anywhere in Dubai.",
+  },
+  {
+    title: "Hotel to Residence",
+    text: "Luggage delivery from hotels to apartments, villas, staff accommodation or short-term rentals.",
+  },
+  {
+    title: "Dubai to Other Emirates",
+    text: "Luggage transport from Dubai to Abu Dhabi, Sharjah, Ajman, Al Ain, RAK, Fujairah and UAQ.",
+  },
+];
+
+const bookingDetails = [
+  "Pickup location and access details",
+  "Drop-off location and contact person",
+  "Number of suitcases, bags or boxes",
+  "Photos of the luggage when helpful",
+  "Preferred pickup date and time",
+  "Airport terminal or hotel name",
+];
+
+const premiumAreas = [
+  "Palm Jumeirah",
+  "Emirates Hills",
+  "Dubai Hills Estate",
+  "Downtown Dubai",
+  "DIFC",
+  "Dubai Marina",
+  "JBR",
+  "Bluewaters Island",
+  "Jumeirah",
+  "Dubai Harbour",
+  "City Walk",
+  "Business Bay",
+  "Arabian Ranches",
+  "Jumeirah Golf Estates",
+];
+
+const otherAreas = [
+  "JLT",
+  "JVC",
+  "JVT",
+  "Al Barsha",
+  "Barsha Heights",
+  "Al Sufouh",
+  "Dubai Internet City",
+  "Dubai Media City",
+  "Dubai Knowledge Park",
+  "Umm Suqeim",
+  "Al Wasl",
+  "Al Safa",
+  "Al Quoz",
+  "Meydan",
+  "Nad Al Sheba",
+  "Mirdif",
+  "Dubai Silicon Oasis",
+  "International City",
+  "Dubai Sports City",
+  "Motor City",
+  "Studio City",
+  "Discovery Gardens",
+  "Al Furjan",
+  "Dubai South",
+  "Expo City Dubai",
+  "Dubai Investment Park",
+  "Jebel Ali",
+  "Deira",
+  "Bur Dubai",
+  "Karama",
+  "Oud Metha",
+  "Al Garhoud",
+  "Al Qusais",
+  "Al Nahda",
+  "Al Rashidiya",
+  "Al Warqa",
+  "Town Square",
+  "Damac Hills",
+  "Damac Hills 2",
+  "Remraam",
+  "Mudon",
+];
+
+const faqs = [
+  {
+    question: "Can you collect luggage directly from Dubai Airport?",
+    answer:
+      "Airport collection can be arranged when the terminal, meeting point, arrival details and contact information are confirmed in advance. Airport access and waiting arrangements should be discussed before booking.",
+  },
+  {
+    question: "Can you deliver luggage between two hotels?",
+    answer:
+      "Yes. Hotel-to-hotel luggage transfer is available across Dubai. Please provide both hotel names, booking names and the contact details of the receiving person.",
+  },
+  {
+    question: "How many suitcases can the van carry?",
+    answer:
+      "Capacity depends on the size and shape of the luggage. Send the number of bags and clear photos so we can confirm whether everything will fit safely in one van.",
+  },
+  {
+    question: "Will WhatsApp open with an automatic message?",
+    answer:
+      "No. The WhatsApp button opens a blank chat, allowing you to write your own message.",
+  },
+  {
+    question: "Do you provide luggage delivery outside Dubai?",
+    answer:
+      "Yes. Delivery can be arranged from Dubai to other emirates, subject to route, timing and vehicle availability.",
+  },
+];
+
+export const meta: MetaFunction = () => [
+  {
+    title: "Luggage Delivery Service Dubai | Airport & Hotel Transfers",
+  },
+  {
+    name: "description",
+    content:
+      "Luggage delivery service Dubai for airport, hotel, home and inter-hotel transfers. Call or WhatsApp +971 52 806 5642 for a direct quote.",
+  },
+];
 
 export default function LuggageDeliveryDubai() {
   return (
-    <main
-      style={{
-        fontFamily: "Arial, sans-serif",
-        color: "#222",
-        lineHeight: "1.7",
-      }}
-    >
-      <section
-        style={{
-          background: "#f4f7fa",
-          padding: "70px 20px",
-          textAlign: "center",
-        }}
-      >
-        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-          <h1
-            style={{
-              fontSize: "42px",
-              marginBottom: "20px",
-              lineHeight: "1.2",
-            }}
-          >
-            Luggage Delivery Dubai
-          </h1>
+    <main className="min-h-screen bg-white text-slate-900">
+      <section className="relative overflow-hidden bg-slate-950 text-white">
+        <img
+          src="/1000007437.jpg"
+          alt="Luggage delivery service Dubai"
+          className="absolute inset-0 h-full w-full object-cover opacity-40"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-slate-900/35" />
 
-          <p
-            style={{
-              fontSize: "20px",
-              marginBottom: "30px",
-            }}
-          >
-            Fast, safe and reliable luggage transport for airports, hotels,
-            homes and offices across Dubai.
-          </p>
-
+        <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
           <a
             href="/"
-            style={{
-              display: "inline-block",
-              background: "#111",
-              color: "#fff",
-              padding: "14px 28px",
-              borderRadius: "6px",
-              textDecoration: "none",
-              fontWeight: "bold",
-            }}
+            className="mb-7 inline-flex rounded-full bg-white/10 px-4 py-2 text-sm font-semibold ring-1 ring-white/20 hover:bg-white/20"
           >
-            Book Luggage Delivery
+            ← Back to Home
           </a>
-        </div>
-      </section>
 
-      <section style={{ padding: "60px 20px" }}>
-        <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "32px" }}>
-            Reliable Luggage Transport in Dubai
-          </h2>
+          <div className="max-w-3xl">
+            <p className="mb-4 font-bold uppercase tracking-widest text-blue-300">
+              Airport • Hotel • Home • UAE Transfers
+            </p>
 
-          <p>
-            Our luggage delivery service in Dubai is suitable for travellers,
-            families, hotel guests, business clients and residents who need
-            their suitcases, bags or boxes transported safely from one location
-            to another.
-          </p>
+            <h1 className="text-4xl font-black leading-tight sm:text-5xl lg:text-7xl">
+              Luggage Delivery Service Dubai
+            </h1>
 
-          <p>
-            We can collect luggage from your hotel, apartment, villa, office or
-            airport area and deliver it to your required destination in Dubai.
-            Our van service is suitable for single suitcases as well as larger
-            quantities of luggage.
-          </p>
-        </div>
-      </section>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200 sm:text-xl">
+              Reliable transport for suitcases, travel bags, boxes and personal
+              belongings between Dubai airports, hotels, homes and business
+              locations.
+            </p>
 
-      <section
-        style={{
-          background: "#f8f8f8",
-          padding: "60px 20px",
-        }}
-      >
-        <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "32px" }}>Our Luggage Delivery Services</h2>
-
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
-              gap: "20px",
-              marginTop: "30px",
-            }}
-          >
-            {[
-              "Airport luggage transfer",
-              "Hotel to hotel luggage delivery",
-              "Home and apartment luggage transport",
-              "Suitcase and travel bag delivery",
-              "Boxes and personal items transport",
-              "Dubai to other UAE emirates",
-            ].map((service) => (
-              <div
-                key={service}
-                style={{
-                  background: "#fff",
-                  padding: "25px",
-                  borderRadius: "8px",
-                  boxShadow: "0 2px 10px rgba(0,0,0,0.06)",
-                }}
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a
+                href={phoneLink}
+                className="rounded-xl bg-blue-600 px-7 py-4 text-center text-lg font-bold text-white hover:bg-blue-700"
               >
-                <h3 style={{ marginTop: 0 }}>{service}</h3>
-                <p>
-                  Safe collection and delivery with a professional van and
-                  experienced driver.
-                </p>
-              </div>
+                Call {phoneDisplay}
+              </a>
+
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-xl bg-green-500 px-7 py-4 text-center text-lg font-bold text-white hover:bg-green-600"
+              >
+                WhatsApp
+              </a>
+            </div>
+
+            <p className="mt-4 text-sm text-slate-300">
+              WhatsApp opens as a blank chat with no automatic message.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-center">
+          <div>
+            <p className="font-bold uppercase tracking-widest text-blue-600">
+              Door-to-door luggage transport
+            </p>
+
+            <h2 className="mt-3 text-3xl font-black sm:text-4xl">
+              Move Your Luggage Without Moving Everything Else
+            </h2>
+
+            <p className="mt-5 text-lg leading-8 text-slate-600">
+              This service is suitable when you need luggage moved separately
+              from passengers. It can help during hotel changes, airport
+              transfers, short-term stays, relocation days, business trips and
+              family travel.
+            </p>
+
+            <p className="mt-4 text-lg leading-8 text-slate-600">
+              We focus on direct van transport rather than large household
+              moving. Send the collection and delivery details, the number of
+              bags and your preferred time so the job can be checked properly.
+            </p>
+
+            <div className="mt-8 grid gap-3 sm:grid-cols-2">
+              {luggageTypes.map((item) => (
+                <div
+                  key={item}
+                  className="flex gap-3 rounded-xl bg-slate-50 p-4 ring-1 ring-slate-200"
+                >
+                  <span className="font-black text-green-600">✓</span>
+                  <span className="font-semibold text-slate-700">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="grid gap-5">
+            <img
+              src="/1000007437.jpg"
+              alt="Van loaded with luggage in Dubai"
+              className="h-80 w-full rounded-2xl object-cover shadow-xl"
+            />
+
+            <div className="grid gap-5 sm:grid-cols-2">
+              <img
+                src="/1000007422.jpg"
+                alt="Clean cargo space for luggage transport"
+                className="h-56 w-full rounded-2xl object-cover shadow-lg"
+              />
+              <img
+                src="/1000007421.jpg"
+                alt="White luggage delivery van in Dubai"
+                className="h-56 w-full rounded-2xl object-cover shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-slate-50 px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="font-bold uppercase tracking-widest text-blue-600">
+              Transfer options
+            </p>
+
+            <h2 className="mt-3 text-3xl font-black sm:text-4xl">
+              Luggage Collection and Delivery Routes
+            </h2>
+
+            <p className="mt-4 text-lg text-slate-600">
+              Choose the transfer type that matches your journey.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {transferOptions.map((option) => (
+              <article
+                key={option.title}
+                className="rounded-2xl bg-white p-7 shadow-sm ring-1 ring-slate-200"
+              >
+                <h3 className="text-xl font-extrabold">{option.title}</h3>
+                <p className="mt-3 leading-7 text-slate-600">{option.text}</p>
+              </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section style={{ padding: "60px 20px" }}>
-        <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "32px" }}>
-            Airport Luggage Transfer Dubai
-          </h2>
+      <section className="px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-10 lg:grid-cols-2">
+            <div className="rounded-3xl bg-slate-950 p-8 text-white sm:p-10">
+              <p className="font-bold uppercase tracking-widest text-blue-400">
+                Before booking
+              </p>
 
-          <p>
-            Travelling with several suitcases can be difficult, especially when
-            your car or taxi does not have enough space. Our airport luggage
-            transfer service provides a practical solution for transporting
-            bags between airports, hotels, apartments and villas.
-          </p>
+              <h2 className="mt-3 text-3xl font-black">
+                Send These Details for an Accurate Quote
+              </h2>
 
-          <p>
-            Advance booking is recommended so that the van can arrive at the
-            required pickup location at the agreed time.
-          </p>
+              <div className="mt-8 space-y-4">
+                {bookingDetails.map((detail, index) => (
+                  <div key={detail} className="flex items-start gap-4">
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-blue-600 font-black">
+                      {index + 1}
+                    </span>
+                    <span className="pt-1 text-slate-200">{detail}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <p className="font-bold uppercase tracking-widest text-blue-600">
+                Careful transport
+              </p>
+
+              <h2 className="mt-3 text-3xl font-black sm:text-4xl">
+                Suitable Vehicle for Multiple Bags and Boxes
+              </h2>
+
+              <p className="mt-5 text-lg leading-8 text-slate-600">
+                The enclosed cargo van protects luggage from direct sun, road
+                dust and open-air exposure during transport. Items should be
+                packed and closed properly before collection.
+              </p>
+
+              <div className="mt-7 space-y-4">
+                {[
+                  "Enclosed cargo space",
+                  "Suitable for individual and family luggage",
+                  "Direct pickup and delivery",
+                  "Hotel, airport, home and office collection",
+                  "Dubai-wide and inter-emirate service",
+                  "Call and WhatsApp contact only",
+                ].map((item) => (
+                  <div key={item} className="flex gap-3">
+                    <span className="font-black text-green-600">✓</span>
+                    <span className="font-semibold text-slate-700">{item}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                <a
+                  href={phoneLink}
+                  className="rounded-xl bg-slate-900 px-6 py-4 text-center font-bold text-white hover:bg-slate-800"
+                >
+                  Call for a Quote
+                </a>
+
+                <a
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-xl bg-green-500 px-6 py-4 text-center font-bold text-white hover:bg-green-600"
+                >
+                  Send Details on WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section
-        style={{
-          background: "#f8f8f8",
-          padding: "60px 20px",
-        }}
-      >
-        <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "32px" }}>Why Choose Our Service?</h2>
+      <section className="bg-slate-950 px-4 py-16 text-white sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="font-bold uppercase tracking-widest text-blue-400">
+              Areas covered
+            </p>
 
-          <ul style={{ fontSize: "18px" }}>
-            <li>Professional van with an experienced driver</li>
-            <li>Suitable for suitcases, bags and boxes</li>
-            <li>Pickup and delivery across Dubai</li>
-            <li>Service available for individuals and businesses</li>
-            <li>Advance and same-day bookings subject to availability</li>
-            <li>Careful handling of your luggage</li>
-          </ul>
+            <h2 className="mt-3 text-3xl font-black sm:text-4xl">
+              Luggage Delivery Across Dubai
+            </h2>
+          </div>
+
+          <div className="mt-10">
+            <h3 className="text-xl font-extrabold text-amber-300">
+              Premium Dubai Areas
+            </h3>
+
+            <div className="mt-4 flex flex-wrap gap-2">
+              {premiumAreas.map((area) => (
+                <span
+                  key={area}
+                  className="rounded-full bg-white/10 px-4 py-2 text-sm ring-1 ring-white/15"
+                >
+                  {area}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-10">
+            <h3 className="text-xl font-extrabold">More Dubai Areas</h3>
+
+            <div className="mt-4 flex flex-wrap gap-2">
+              {otherAreas.map((area) => (
+                <span
+                  key={area}
+                  className="rounded-full bg-white/5 px-4 py-2 text-sm text-slate-200 ring-1 ring-white/10"
+                >
+                  {area}
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
-      <section style={{ padding: "60px 20px" }}>
-        <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "32px" }}>Areas We Cover</h2>
+      <section className="px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-4xl">
+          <div className="text-center">
+            <p className="font-bold uppercase tracking-widest text-blue-600">
+              Helpful information
+            </p>
 
-          <p>
-            We provide luggage delivery in Dubai Marina, JBR, JLT, Palm
-            Jumeirah, Downtown Dubai, Business Bay, DIFC, JVC, Dubai Hills, Al
-            Barsha, Deira, Bur Dubai and other areas across Dubai.
-          </p>
+            <h2 className="mt-3 text-3xl font-black sm:text-4xl">
+              Frequently Asked Questions
+            </h2>
+          </div>
 
-          <p>
-            Transport to Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah,
-            Umm Al Quwain and Al Ain may also be arranged.
-          </p>
+          <div className="mt-10 space-y-4">
+            {faqs.map((faq) => (
+              <details
+                key={faq.question}
+                className="rounded-2xl border border-slate-200 bg-white p-6"
+              >
+                <summary className="cursor-pointer list-none text-lg font-extrabold">
+                  {faq.question}
+                </summary>
+                <p className="mt-4 leading-7 text-slate-600">{faq.answer}</p>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
 
-      <section
-        style={{
-          background: "#111",
-          color: "#fff",
-          padding: "60px 20px",
-          textAlign: "center",
-        }}
-      >
-        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "32px" }}>
+      <section className="bg-blue-600 px-4 py-16 text-white sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl font-black sm:text-4xl">
             Book Luggage Delivery in Dubai
           </h2>
 
-          <p style={{ fontSize: "18px" }}>
-            Send your pickup location, delivery location, number of bags and
-            preferred time to receive a quotation.
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-blue-100">
+            Send your pickup, drop-off, luggage quantity and preferred time by
+            phone or WhatsApp.
           </p>
 
-          <a
-            href="/"
-            style={{
-              display: "inline-block",
-              marginTop: "15px",
-              background: "#fff",
-              color: "#111",
-              padding: "14px 28px",
-              borderRadius: "6px",
-              textDecoration: "none",
-              fontWeight: "bold",
-            }}
-          >
-            Contact Us
-          </a>
+          <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+            <a
+              href={phoneLink}
+              className="rounded-xl bg-white px-7 py-4 text-lg font-bold text-blue-700 hover:bg-blue-50"
+            >
+              Call {phoneDisplay}
+            </a>
+
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xl bg-green-500 px-7 py-4 text-lg font-bold text-white hover:bg-green-600"
+            >
+              Open WhatsApp
+            </a>
+          </div>
         </div>
       </section>
+
+      <footer className="bg-slate-950 px-4 py-10 text-white sm:px-6 lg:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col gap-6 text-center md:flex-row md:items-center md:justify-between md:text-left">
+          <div>
+            <p className="text-xl font-black">Luggage Delivery Service Dubai</p>
+            <p className="mt-2 text-sm text-slate-400">
+              Airport, hotel, home and inter-emirate luggage transport.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-2 text-sm md:items-end">
+            <a href="/" className="font-bold hover:text-blue-300">
+              Home
+            </a>
+            <a
+              href="/man-with-a-van-in-dubai"
+              className="font-bold hover:text-blue-300"
+            >
+              Man with a Van Dubai
+            </a>
+            <a href={phoneLink} className="font-bold hover:text-blue-300">
+              {phoneDisplay}
+            </a>
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold text-green-400 hover:text-green-300"
+            >
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
