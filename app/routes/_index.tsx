@@ -1,699 +1,506 @@
 import type { MetaFunction } from "@remix-run/cloudflare";
 
-export const meta: MetaFunction = () => {
-  return [
-    { title: "Van with Man Dubai - Professional Man & Van Services in Dubai" },
-    {
-      name: "description",
-      content:
-        "Professional Man with Van services in Dubai. Affordable pickup truck rental with driver, delivery van hire, luggage delivery, and cargo transport. Call +971528065642",
-    },
-  ];
-};
+const phoneDisplay = "+971 52 806 5642";
+const phoneLink = "tel:+971528065642";
+const whatsappLink = "https://wa.me/971528065642";
+
+const services = [
+  {
+    title: "Man with a Van Dubai",
+    description:
+      "Reliable van with driver service for luggage, boxes, small furniture and everyday transport across Dubai.",
+    href: "/man-with-a-van-in-dubai",
+    image: "/1000007421.jpg",
+  },
+  {
+    title: "Luggage Delivery Service Dubai",
+    description:
+      "Safe luggage collection and delivery between hotels, homes, airports and business locations.",
+    href: "/luggage-delivery-dubai",
+    image: "/1000007437.jpg",
+  },
+  {
+    title: "Airport to Hotel Luggage Delivery",
+    description:
+      "Convenient luggage transport from Dubai airports to hotels, residences and serviced apartments.",
+    href: "/airport-to-hotel-luggage-delivery-dubai",
+    image: "/1000007422.jpg",
+  },
+  {
+    title: "Small Moving Dubai",
+    description:
+      "Ideal for boxes, suitcases, mattresses, tables, chairs and a limited amount of household items.",
+    href: "/small-moving-dubai",
+    image: "/1000007436.jpg",
+  },
+  {
+    title: "IKEA Furniture Delivery Dubai",
+    description:
+      "Collection and delivery of flat-pack and small IKEA furniture items throughout Dubai.",
+    href: "/ikea-delivery-dubai",
+    image: "/hiace-delivery-van-dubai.jpg",
+  },
+  {
+    title: "Boxes Delivery Dubai",
+    description:
+      "Fast and careful transport for moving boxes, cartons, personal belongings and business supplies.",
+    href: "/boxes-delivery-dubai",
+    image: "/1000007423.jpg",
+  },
+  {
+    title: "Small Furniture Delivery Dubai",
+    description:
+      "Transport for sofas, beds, tables, chairs, cabinets and other small furniture that fits safely in the van.",
+    href: "/small-furniture-delivery-dubai",
+    image: "/1000007437.jpg",
+  },
+  {
+    title: "Same-Day Delivery Dubai",
+    description:
+      "Quick collection and delivery for urgent items, subject to vehicle availability and route timing.",
+    href: "/same-day-delivery-dubai",
+    image: "/1000007436.jpg",
+  },
+  {
+    title: "Hotel Luggage Transfer Dubai",
+    description:
+      "Easy hotel-to-hotel, hotel-to-airport and hotel-to-residence luggage transfers across Dubai.",
+    href: "/hotel-luggage-transfer-dubai",
+    image: "/1000007422.jpg",
+  },
+  {
+    title: "Exhibition & Event Delivery Dubai",
+    description:
+      "Transport for display items, boxes, stands, event materials and light exhibition equipment.",
+    href: "/exhibition-event-delivery-dubai",
+    image: "/1-ton-pickup-truck-man-van-dubai.jpg",
+  },
+  {
+    title: "Dubai to Other Emirates Delivery",
+    description:
+      "Van delivery from Dubai to Abu Dhabi, Sharjah, Ajman, Al Ain, RAK, Fujairah and Umm Al Quwain.",
+    href: "/dubai-to-other-emirates-delivery",
+    image: "/slide1.png",
+  },
+];
+
+const premiumAreas = [
+  "Palm Jumeirah",
+  "Emirates Hills",
+  "Dubai Hills Estate",
+  "Downtown Dubai",
+  "DIFC",
+  "Dubai Marina",
+  "JBR",
+  "Bluewaters Island",
+  "Jumeirah",
+  "Dubai Harbour",
+  "City Walk",
+  "Business Bay",
+  "Arabian Ranches",
+  "Jumeirah Golf Estates",
+  "The Lakes",
+  "The Meadows",
+  "The Springs",
+  "Dubai Creek Harbour",
+];
+
+const otherAreas = [
+  "JLT",
+  "JVC",
+  "JVT",
+  "Al Barsha",
+  "Barsha Heights",
+  "Al Sufouh",
+  "Dubai Internet City",
+  "Dubai Media City",
+  "Dubai Knowledge Park",
+  "Umm Suqeim",
+  "Al Wasl",
+  "Al Safa",
+  "Al Quoz",
+  "Meydan",
+  "Nad Al Sheba",
+  "Mirdif",
+  "Dubai Silicon Oasis",
+  "International City",
+  "Dragon Mart",
+  "Dubai Sports City",
+  "Motor City",
+  "Studio City",
+  "Dubai Production City",
+  "Discovery Gardens",
+  "The Gardens",
+  "Al Furjan",
+  "Dubai South",
+  "Expo City Dubai",
+  "Dubai Investment Park",
+  "Jebel Ali",
+  "Deira",
+  "Bur Dubai",
+  "Karama",
+  "Oud Metha",
+  "Al Garhoud",
+  "Al Qusais",
+  "Muhaisnah",
+  "Al Nahda",
+  "Hor Al Anz",
+  "Al Twar",
+  "Al Rashidiya",
+  "Al Warqa",
+  "Nad Al Hamar",
+  "Dubai Academic City",
+  "Town Square",
+  "Damac Hills",
+  "Damac Hills 2",
+  "Remraam",
+  "Mudon",
+];
+
+const faqs = [
+  {
+    question: "What items can you transport?",
+    answer:
+      "We transport luggage, boxes, suitcases, small furniture, mattresses, event materials and other items that fit safely inside the van. We do not advertise large apartment or full-house moving.",
+  },
+  {
+    question: "Do you provide service across all of Dubai?",
+    answer:
+      "Yes. We cover premium communities, central Dubai, residential areas, industrial areas and locations across the city.",
+  },
+  {
+    question: "Can I book through WhatsApp?",
+    answer:
+      "Yes. Tap the WhatsApp button to open a blank chat and send your pickup location, drop-off location, item details and preferred time.",
+  },
+  {
+    question: "Do you deliver outside Dubai?",
+    answer:
+      "Yes. Dubai-to-other-emirates delivery is available, including Abu Dhabi, Sharjah, Ajman, Al Ain, Ras Al Khaimah, Fujairah and Umm Al Quwain.",
+  },
+];
+
+export const meta: MetaFunction = () => [
+  { title: "Man with a Van Dubai | Luggage & Small Moving Service" },
+  {
+    name: "description",
+    content:
+      "Man with a Van Dubai for luggage delivery, airport-to-hotel transfers, boxes, IKEA delivery and small moving. Call or WhatsApp +971 52 806 5642.",
+  },
+];
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 to-green-50 py-16 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <div className="mb-8">
-            <span className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
-              🚐 Professional Van Services in Dubai
-            </span>
-          </div>
-
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Hire a Man and Van <br />
-            <span className="text-blue-600">in Dubai</span>
-          </h1>
-
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Professional operation at extremely competitive pricing. We provide
-            man and van hire services for all your transport requirements in
-            Dubai.
-          </p>
-
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
-            <a
-              href="tel:+971528065642"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
-            >
-              📞 Call +971 52 806 5642
-            </a>
-            <a
-              href="https://wa.me/971528065642"
-              className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center justify-center gap-2"
-            >
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="flex-shrink-0"
+    <main className="min-h-screen bg-white text-slate-900">
+      <section className="relative overflow-hidden bg-slate-950 text-white">
+        <img
+          src="/1000007421.jpg"
+          alt="Man with a Van Dubai service vehicle"
+          className="absolute inset-0 h-full w-full object-cover opacity-40"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-slate-900/40" />
+        <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+          <div className="max-w-3xl">
+            <p className="mb-4 inline-flex rounded-full bg-white/10 px-4 py-2 text-sm font-semibold ring-1 ring-white/20">
+              Luggage • Boxes • Small Moving • Furniture Delivery
+            </p>
+            <h1 className="text-4xl font-black leading-tight sm:text-5xl lg:text-7xl">
+              Man with a Van Dubai
+            </h1>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200 sm:text-xl">
+              Reliable van and driver service for luggage delivery, airport and
+              hotel transfers, boxes, IKEA items, small furniture and light
+              moving across Dubai and the UAE.
+            </p>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a
+                href={phoneLink}
+                className="rounded-xl bg-blue-600 px-7 py-4 text-center text-lg font-bold text-white transition hover:bg-blue-700"
               >
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.051 3.488" />
-              </svg>
-              WhatsApp Us
-            </a>
-          </div>
-
-          {/* Hero Content Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
-            {/* Quality Text */}
-            <div className="order-2 lg:order-1">
-              <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                  Why Choose Our Quality Service?
-                </h3>
-
-                <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="bg-blue-100 p-3 rounded-full flex-shrink-0">
-                      <span className="text-2xl">🏆</span>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-lg text-gray-900 mb-2">
-                        Premium Service Quality
-                      </h4>
-                      <p className="text-gray-600">
-                        Professional drivers with years of experience ensuring
-                        your items are handled with utmost care and precision.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="bg-green-100 p-3 rounded-full flex-shrink-0">
-                      <span className="text-2xl">🛡️</span>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-lg text-gray-900 mb-2">
-                        Fully Insured & Licensed
-                      </h4>
-                      <p className="text-gray-600">
-                        Complete insurance coverage and proper licensing give
-                        you peace of mind during every transport.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="bg-yellow-100 p-3 rounded-full flex-shrink-0">
-                      <span className="text-2xl">⭐</span>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-lg text-gray-900 mb-2">
-                        5-Star Customer Satisfaction
-                      </h4>
-                      <p className="text-gray-600">
-                        Consistently rated highly by customers across Dubai for
-                        reliability, punctuality, and professional service.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="bg-purple-100 p-3 rounded-full flex-shrink-0">
-                      <span className="text-2xl">🚚</span>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-lg text-gray-900 mb-2">
-                        Modern Fleet Vehicles
-                      </h4>
-                      <p className="text-gray-600">
-                        Well-maintained, clean vehicles equipped with proper
-                        loading equipment for safe transport of all items.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                Call {phoneDisplay}
+              </a>
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-xl bg-green-500 px-7 py-4 text-center text-lg font-bold text-white transition hover:bg-green-600"
+              >
+                WhatsApp
+              </a>
+            </div>
+            <div className="mt-8 grid max-w-2xl grid-cols-1 gap-3 text-sm sm:grid-cols-3">
+              <div className="rounded-xl bg-white/10 p-4 ring-1 ring-white/15">
+                Fast response
               </div>
-            </div>
-
-            {/* Hero Video */}
-            <div className="order-1 lg:order-2">
-              <div className="relative rounded-lg overflow-hidden shadow-xl bg-gray-900 max-w-sm mx-auto">
-                <video
-                  className="w-full h-auto"
-                  controls
-                  preload="metadata"
-                  poster="/video.png"
-                >
-                  <source src="/1000007429.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-                <div className="absolute inset-0 bg-black bg-opacity-20 pointer-events-none rounded-lg"></div>
+              <div className="rounded-xl bg-white/10 p-4 ring-1 ring-white/15">
+                Clean cargo vans
               </div>
-              <p className="text-sm text-gray-600 mt-3 text-center">
-                🎥 See our professional van services in action
-              </p>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="text-3xl mb-2">⚡</div>
-              <h3 className="font-semibold">Quick Response</h3>
-              <p className="text-gray-600">Get moving as soon as you like</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="text-3xl mb-2">💰</div>
-              <h3 className="font-semibold">Best Prices</h3>
-              <p className="text-gray-600">
-                Competitive pricing for all customers
-              </p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="text-3xl mb-2">✅</div>
-              <h3 className="font-semibold">Professional Staff</h3>
-              <p className="text-gray-600">Trained and experienced drivers</p>
+              <div className="rounded-xl bg-white/10 p-4 ring-1 ring-white/15">
+                Dubai-wide coverage
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="py-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Our Vehicle Fleet
+      <section className="bg-slate-50 px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="font-bold uppercase tracking-widest text-blue-600">
+              Our services
+            </p>
+            <h2 className="mt-3 text-3xl font-black sm:text-4xl">
+              Delivery and Small Moving Services in Dubai
             </h2>
-            <p className="text-xl text-gray-600">
-              Professional vehicles designed for different transport needs
+            <p className="mt-4 text-lg text-slate-600">
+              Select a service to view full details. Every service is also linked
+              directly from this home page.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Personal & Furniture Moving */}
-            <div className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-              <div className="aspect-square bg-gray-100 overflow-hidden">
+          <div className="mt-12 grid gap-7 md:grid-cols-2 lg:grid-cols-3">
+            {services.map((service) => (
+              <article
+                key={service.title}
+                className="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-xl"
+              >
                 <img
-                  src="/1000007437.jpg"
-                  alt="Van Loading Area - Perfect for Furniture and Personal Items"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  onError={(e) => {
-                    e.currentTarget.src =
-                      "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjEwMCIgeT0iMTAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzY3NzQ4RiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkxvYWRpbmcgQXJlYTwvdGV4dD4KPHN2Zz4K";
-                  }}
+                  src={service.image}
+                  alt={service.title}
+                  className="h-56 w-full object-cover"
+                  loading="lazy"
                 />
-              </div>
-              <div className="p-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="bg-blue-100 p-2 rounded-full">
-                    <span className="text-2xl">🏠</span>
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900">
-                    Personal & Furniture Moving
-                  </h3>
-                </div>
-
-                <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-                  Spacious loading area perfect for furniture transport, home
-                  moves, and personal relocations. Our van's cargo space is
-                  designed to handle delicate items with care and provide ample
-                  room for small to medium-sized moving jobs.
-                </p>
-
-                <div className="space-y-3 mb-6">
-                  <div className="flex items-center gap-2">
-                    <span className="text-green-600">✓</span>
-                    <span className="text-gray-700">
-                      Furniture & Appliance Moving
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-green-600">✓</span>
-                    <span className="text-gray-700">
-                      Home & Apartment Relocations
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-green-600">✓</span>
-                    <span className="text-gray-700">
-                      Student Moving Services
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-green-600">✓</span>
-                    <span className="text-gray-700">
-                      Safe & Secure Transport
-                    </span>
-                  </div>
-                </div>
-
-                <div className="pt-4 border-t border-gray-100">
-                  <div className="flex justify-between items-center mb-4">
-                    <span className="text-blue-600 font-semibold text-lg">
-                      Perfect for: Personal Use
-                    </span>
-                  </div>
-                  <div className="flex gap-3">
+                <div className="p-6">
+                  <h3 className="text-xl font-extrabold">{service.title}</h3>
+                  <p className="mt-3 leading-7 text-slate-600">
+                    {service.description}
+                  </p>
+                  <div className="mt-6 flex gap-3">
                     <a
-                      href="tel:+971528065642"
-                      className="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2"
+                      href={service.href}
+                      className="flex-1 rounded-lg bg-slate-900 px-4 py-3 text-center font-bold text-white hover:bg-slate-800"
                     >
-                      📞 Call Now
+                      View Service
                     </a>
                     <a
-                      href="https://wa.me/971528065642"
+                      href={whatsappLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2"
+                      aria-label={`WhatsApp about ${service.title}`}
+                      className="rounded-lg bg-green-500 px-4 py-3 font-bold text-white hover:bg-green-600"
                     >
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                      >
-                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.785" />
-                      </svg>
                       WhatsApp
                     </a>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            {/* Business & Fast Delivery */}
-            <div className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-              <div className="aspect-square bg-gray-100 overflow-hidden">
-                <img
-                  src="/1000007436.jpg"
-                  alt="Professional Delivery Van - Fast Business Transport"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  onError={(e) => {
-                    e.currentTarget.src =
-                      "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjEwMCIgeT0iMTAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzY3NzQ4RiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkRlbGl2ZXJ5IFZhbjwvdGV4dD4KPHN2Zz4K";
-                  }}
-                />
-              </div>
-              <div className="p-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="bg-green-100 p-2 rounded-full">
-                    <span className="text-2xl">🚀</span>
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900">
-                    Business & Fast Delivery
-                  </h3>
-                </div>
-
-                <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-                  Professional delivery van optimized for business deliveries
-                  and quick transport. Our reliable vehicle is designed to
-                  navigate through Dubai traffic efficiently while ensuring your
-                  cargo reaches its destination on time.
-                </p>
-
-                <div className="space-y-3 mb-6">
-                  <div className="flex items-center gap-2">
-                    <span className="text-green-600">✓</span>
-                    <span className="text-gray-700">
-                      Same-Day Business Deliveries
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-green-600">✓</span>
-                    <span className="text-gray-700">
-                      Fast Traffic Navigation
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-green-600">✓</span>
-                    <span className="text-gray-700">
-                      E-commerce & Retail Support
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-green-600">✓</span>
-                    <span className="text-gray-700">
-                      Time-Critical Deliveries
-                    </span>
-                  </div>
-                </div>
-
-                <div className="pt-4 border-t border-gray-100">
-                  <div className="flex justify-between items-center mb-4">
-                    <span className="text-green-600 font-semibold text-lg">
-                      Perfect for: Business Use
-                    </span>
-                  </div>
-                  <div className="flex gap-3">
-                    <a
-                      href="tel:+971528065642"
-                      className="flex-1 bg-green-600 hover:bg-green-700 text-white px-4 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2"
-                    >
-                      📞 Call Now
-                    </a>
-                    <a
-                      href="https://wa.me/971528065642"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2"
-                    >
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                      >
-                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.785" />
-                      </svg>
-                      WhatsApp
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Video Showcase Section */}
-      <section className="py-16 px-4 bg-gray-900 text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            See Our Services in Action
-          </h2>
-          <p className="text-xl text-gray-300 mb-8">
-            Watch how our professional team handles your moving and delivery
-            needs with care and efficiency
-          </p>
-
-          <div className="relative rounded-lg overflow-hidden shadow-2xl bg-black">
+      <section className="px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-center">
+          <div>
+            <p className="font-bold uppercase tracking-widest text-blue-600">
+              Real service video
+            </p>
+            <h2 className="mt-3 text-3xl font-black sm:text-4xl">
+              See the Van Service in Action
+            </h2>
+            <p className="mt-5 text-lg leading-8 text-slate-600">
+              The existing video remains on the home page in one clear section,
+              helping customers see the vehicle and service before booking.
+            </p>
+            <div className="mt-7 space-y-4">
+              {[
+                "Suitable for luggage, boxes and limited furniture",
+                "Call or WhatsApp directly without an email form",
+                "WhatsApp opens without a pre-written message",
+                "Service available across Dubai and other emirates",
+              ].map((item) => (
+                <div key={item} className="flex gap-3">
+                  <span className="font-black text-green-600">✓</span>
+                  <span className="text-slate-700">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="overflow-hidden rounded-2xl bg-black shadow-2xl">
             <video
-              className="w-full h-auto"
+              className="h-auto w-full"
               controls
               preload="metadata"
-              poster="/slide1.png"
+              poster="/video.png"
             >
               <source src="/1000007429.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
-
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="text-center">
-              <div className="text-2xl mb-2">🚚</div>
-              <h3 className="font-semibold mb-1">Professional Loading</h3>
-              <p className="text-gray-400 text-sm">
-                Expert handling of your items
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl mb-2">⚡</div>
-              <h3 className="font-semibold mb-1">Quick Service</h3>
-              <p className="text-gray-400 text-sm">
-                Efficient and timely delivery
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl mb-2">🛡️</div>
-              <h3 className="font-semibold mb-1">Safe Transport</h3>
-              <p className="text-gray-400 text-sm">Your items arrive safely</p>
-            </div>
-          </div>
         </div>
       </section>
 
-      {/* About & Advantages */}
-      <section className="bg-gray-50 py-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Why Choose Van with Man Dubai?
-              </h2>
-              <p className="text-lg text-gray-600 mb-8">
-                Let our man with a van service take care of your transport
-                requirements. We provide a professional operation at extremely
-                competitive pricing, ensuring your peace of mind.
-              </p>
-
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <div className="bg-green-100 p-2 rounded-full">
-                    <span className="text-green-600">✓</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">No Monthly Payments</h4>
-                    <p className="text-gray-600">
-                      Pay only when you need our services
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <div className="bg-green-100 p-2 rounded-full">
-                    <span className="text-green-600">✓</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">Well-Maintained Vehicles</h4>
-                    <p className="text-gray-600">
-                      Large variety of professional vehicles
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <div className="bg-green-100 p-2 rounded-full">
-                    <span className="text-green-600">✓</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">Trained Drivers</h4>
-                    <p className="text-gray-600">
-                      Professional staff with smooth driving style
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <div className="bg-green-100 p-2 rounded-full">
-                    <span className="text-green-600">✓</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">Affordable for All</h4>
-                    <p className="text-gray-600">
-                      Best prices for new and returning customers
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-bold mb-6">
-                Who Can Use Our Services?
-              </h3>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="text-center p-4 bg-blue-50 rounded-lg">
-                  <div className="text-3xl mb-2">🏪</div>
-                  <p className="font-semibold">Small Businesses</p>
-                </div>
-                <div className="text-center p-4 bg-blue-50 rounded-lg">
-                  <div className="text-3xl mb-2">🥖</div>
-                  <p className="font-semibold">Bakery Shops</p>
-                </div>
-                <div className="text-center p-4 bg-blue-50 rounded-lg">
-                  <div className="text-3xl mb-2">🍖</div>
-                  <p className="font-semibold">Restaurants</p>
-                </div>
-                <div className="text-center p-4 bg-blue-50 rounded-lg">
-                  <div className="text-3xl mb-2">🛒</div>
-                  <p className="font-semibold">Grocery Shops</p>
-                </div>
-                <div className="text-center p-4 bg-blue-50 rounded-lg">
-                  <div className="text-3xl mb-2">📦</div>
-                  <p className="font-semibold">E-commerce</p>
-                </div>
-                <div className="text-center p-4 bg-blue-50 rounded-lg">
-                  <div className="text-3xl mb-2">👤</div>
-                  <p className="font-semibold">Individuals</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section className="py-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Get in Touch
+      <section className="bg-slate-950 px-4 py-16 text-white sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="font-bold uppercase tracking-widest text-blue-400">
+              Service areas
+            </p>
+            <h2 className="mt-3 text-3xl font-black sm:text-4xl">
+              Man with a Van Across Dubai
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Ready to move? Contact us for professional van services in Dubai.
-              We're here to make your transport needs hassle-free.
+            <p className="mt-4 text-slate-300">
+              Premium locations are shown first, followed by wider city coverage.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            <div className="bg-white p-8 rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition-shadow">
-              <div className="text-4xl mb-4 text-center">📞</div>
-              <h3 className="font-semibold mb-3 text-center text-lg">Phone</h3>
-              <a
-                href="tel:+971528065642"
-                className="text-blue-600 hover:text-blue-800 text-lg block text-center font-medium"
-              >
-                +971 528 06 5642
-              </a>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition-shadow">
-              <div className="text-4xl mb-4 text-center">📧</div>
-              <h3 className="font-semibold mb-3 text-center text-lg">Email</h3>
-              <a
-                href="mailto:manwithavanindubai@gmail.com"
-                className="text-blue-600 hover:text-blue-800 text-sm block text-center font-medium break-words"
-              >
-                manwithavanindubai@gmail.com
-              </a>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition-shadow">
-              <div className="text-4xl mb-4 text-center">⏰</div>
-              <h3 className="font-semibold mb-3 text-center text-lg">
-                Working Hours
-              </h3>
-              <p className="text-gray-600 text-center">24/7 Available</p>
-              <p className="text-gray-500 text-sm text-center mt-1">
-                7 Days a Week
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition-shadow">
-              <div className="text-4xl mb-4 text-center">📍</div>
-              <h3 className="font-semibold mb-3 text-center text-lg">
-                Google Map
-              </h3>
-                  <a
-                href="https://maps.app.goo.gl/dXww1hmEHwpzetYP7"
-                className="text-blue-600 hover:text-blue-800 text-sm block text-center font-medium break-words"
-              >
-                Dubai, UAE
-              </a>
+          <div className="mt-10">
+            <h3 className="text-xl font-extrabold text-amber-300">
+              Premium Dubai Areas
+            </h3>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {premiumAreas.map((area) => (
+                <span
+                  key={area}
+                  className="rounded-full bg-white/10 px-4 py-2 text-sm ring-1 ring-white/15"
+                >
+                  {area}
+                </span>
+              ))}
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-blue-600 to-green-600 p-10 rounded-xl text-white shadow-xl">
-            <div className="text-center mb-8">
-              <h3 className="text-3xl font-bold mb-4">Ready to Move?</h3>
-              <p className="text-xl mb-2">
-                Contact us now for a quick quote and professional service
-              </p>
-              <p className="text-blue-100">
-                Professional • Reliable • Affordable
-              </p>
-            </div>
-
-            <div className="flex flex-col sm:flex-row justify-center gap-6 max-w-md mx-auto">
-              <a
-                href="tel:+971528065642"
-                className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-center flex items-center justify-center gap-2"
-              >
-                📞 Call Now
-              </a>
-              <a
-                href="https://wa.me/971528065642"
-                className="bg-green-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-600 transition-colors text-center flex items-center justify-center gap-2"
-              >
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="flex-shrink-0"
+          <div className="mt-10">
+            <h3 className="text-xl font-extrabold">More Dubai Areas</h3>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {otherAreas.map((area) => (
+                <span
+                  key={area}
+                  className="rounded-full bg-white/5 px-4 py-2 text-sm text-slate-200 ring-1 ring-white/10"
                 >
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.051 3.488" />
-                </svg>
-                WhatsApp
-              </a>
+                  {area}
+                </span>
+              ))}
             </div>
-
-            <div className="mt-8 pt-6 border-t border-blue-400 text-center">
-              <a
-                href="mailto:manwithavanindubai@gmail.com"
-                className="text-blue-100 hover:text-white transition-colors text-lg"
-              >
-                📧 manwithavanindubai@gmail.com
-              </a>
-            </div>
+            <p className="mt-6 text-slate-300">
+              We also serve other locations throughout Dubai. Call or WhatsApp
+              to confirm your pickup and drop-off area.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            <div className="md:col-span-2 lg:col-span-2">
-              <h3 className="text-2xl font-bold mb-4">Van with Man Dubai</h3>
-              <p className="text-gray-300 mb-4">
-                Professional man and van services in Dubai. We provide reliable,
-                affordable transport solutions for businesses and individuals.
-              </p>
-              <div className="flex flex-col gap-2">
-                <a
-                  href="tel:+971528065642"
-                  className="text-blue-400 hover:text-blue-300"
-                >
-                  📞 +971 52 806 5642 
-                </a>
-                <a
-                  href="https://wa.me/971528065642"
-                  className="text-green-400 hover:text-green-300 flex items-center gap-2"
-                >
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="flex-shrink-0"
-                  >
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.051 3.488" />
-                  </svg>
-                  WhatsApp
-                </a>
-                <a
-                  href="mailto:manwithavanindubai@gmail.com"
-                  className="text-gray-400 hover:text-gray-300"
-                >
-                  📧 manwithavanindubai@gmail.com
-                </a>
-              </div>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">Services</h4>
-              <ul className="space-y-2 text-gray-300">
-                <li>Man with Van</li>
-                <li>Delivery Van Hire</li>
-                <li>Luggage Delivery</li>
-                <li>Cargo Transport</li>
-                <li>Rubbish Removal</li>
-              </ul>
-            </div>
-
-            <div className="lg:col-span-1">
-              <h4 className="font-semibold mb-4">Contact Info</h4>
-              <div className="space-y-2 text-gray-300">
-                <p>📞 +971 52 8065642</p>
-                <p className="break-words">📧 manwithavanindubai@gmail.com</p>
-                <p>⏰ 24/7 Available</p>
-                <p>📍 Dubai, UAE</p>
-              </div>
-            </div>
+      <section className="bg-slate-50 px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="font-bold uppercase tracking-widest text-blue-600">
+              Customer feedback
+            </p>
+            <h2 className="mt-3 text-3xl font-black sm:text-4xl">
+              Customer Reviews
+            </h2>
+            <p className="mt-4 text-lg text-slate-600">
+              Add genuine customer reviews here as they are collected. This
+              section avoids publishing invented ratings or testimonials.
+            </p>
           </div>
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {[
+              "Reliable pickup and delivery service.",
+              "Professional communication and careful handling.",
+              "Convenient van service for luggage and boxes.",
+            ].map((text) => (
+              <div
+                key={text}
+                className="rounded-2xl bg-white p-7 shadow-sm ring-1 ring-slate-200"
+              >
+                <div className="text-amber-500">★★★★★</div>
+                <p className="mt-4 leading-7 text-slate-700">{text}</p>
+                <p className="mt-5 text-sm font-bold text-slate-500">
+                  Customer review placeholder
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-          <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Van with Man Dubai. All Rights Reserved.</p>
+      <section className="px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-4xl">
+          <div className="text-center">
+            <p className="font-bold uppercase tracking-widest text-blue-600">
+              Helpful information
+            </p>
+            <h2 className="mt-3 text-3xl font-black sm:text-4xl">
+              Frequently Asked Questions
+            </h2>
+          </div>
+          <div className="mt-10 space-y-4">
+            {faqs.map((faq) => (
+              <details
+                key={faq.question}
+                className="group rounded-2xl border border-slate-200 bg-white p-6"
+              >
+                <summary className="cursor-pointer list-none text-lg font-extrabold">
+                  {faq.question}
+                </summary>
+                <p className="mt-4 leading-7 text-slate-600">{faq.answer}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-blue-600 px-4 py-16 text-white sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl font-black sm:text-4xl">
+            Book Man with a Van Dubai
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-blue-100">
+            Contact us directly by phone or WhatsApp. No email form is required.
+          </p>
+          <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+            <a
+              href={phoneLink}
+              className="rounded-xl bg-white px-7 py-4 text-lg font-bold text-blue-700 hover:bg-blue-50"
+            >
+              Call {phoneDisplay}
+            </a>
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xl bg-green-500 px-7 py-4 text-lg font-bold text-white hover:bg-green-600"
+            >
+              Open WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer className="bg-slate-950 px-4 py-10 text-white sm:px-6 lg:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col gap-6 text-center md:flex-row md:items-center md:justify-between md:text-left">
+          <div>
+            <p className="text-xl font-black">Man with a Van Dubai</p>
+            <p className="mt-2 text-sm text-slate-400">
+              Luggage delivery, small moving and van transport across Dubai.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2 text-sm md:items-end">
+            <a href={phoneLink} className="font-bold hover:text-blue-300">
+              {phoneDisplay}
+            </a>
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold text-green-400 hover:text-green-300"
+            >
+              WhatsApp
+            </a>
           </div>
         </div>
       </footer>
-    </div>
+    </main>
   );
 }
