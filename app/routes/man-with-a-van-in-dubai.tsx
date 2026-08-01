@@ -4,420 +4,534 @@ const phoneDisplay = "+971 52 806 5642";
 const phoneLink = "tel:+971528065642";
 const whatsappLink = "https://wa.me/971528065642";
 
+export const meta: MetaFunction = () => {
+  return [
+    {
+      title:
+        "Man with a Van Dubai | Professional Van & Driver Service",
+    },
+    {
+      name: "description",
+      content:
+        "Professional man with a van Dubai service for luggage, boxes, small furniture, airport transfers, hotel deliveries, office moves and UAE-wide transport. Call or WhatsApp +971 52 806 5642.",
+    },
+    {
+      name: "keywords",
+      content:
+        "man with a van Dubai, van with driver Dubai, moving van Dubai, luggage delivery Dubai, small movers Dubai, furniture delivery Dubai, airport luggage transfer Dubai",
+    },
+    {
+      property: "og:title",
+      content: "Man with a Van Dubai | Professional Van Service",
+    },
+    {
+      property: "og:description",
+      content:
+        "Reliable van with driver service across Dubai and the UAE. Luggage, boxes, furniture, airport, hotel, office and urgent deliveries.",
+    },
+    {
+      property: "og:type",
+      content: "website",
+    },
+    {
+      property: "og:url",
+      content:
+        "https://manwithavanindubai.com/man-with-a-van-in-dubai",
+    },
+    {
+      property: "og:image",
+      content: "https://manwithavanindubai.com/1000007421.jpg",
+    },
+    {
+      name: "robots",
+      content: "index, follow",
+    },
+    {
+      tagName: "link",
+      rel: "canonical",
+      href:
+        "https://manwithavanindubai.com/man-with-a-van-in-dubai",
+    },
+  ];
+};
+
 const services = [
   {
-    title: "Man with a Van Dubai",
+    title: "Luggage Delivery Dubai",
     description:
-      "Reliable van with driver service for luggage, boxes, small furniture and everyday transport across Dubai.",
-    href: "/man-with-a-van-in-dubai",
-    image: "/1000007421.jpg",
-  },
-  {
-    title: "Luggage Delivery Service Dubai",
-    description:
-      "Safe luggage collection and delivery between hotels, homes, airports and business locations.",
+      "Secure collection and delivery of suitcases, travel bags and personal belongings between homes, hotels, airports and business locations.",
     href: "/luggage-delivery-dubai",
-    image: "/1000007437.jpg",
   },
   {
-    title: "Airport to Hotel Luggage Delivery",
+    title: "Airport Luggage Transfer",
     description:
-      "Convenient luggage transport from Dubai airports to hotels, residences and serviced apartments.",
-    href: "/airport-to-hotel-luggage-delivery-dubai",
-    image: "/1000007422.jpg",
+      "Reliable luggage transport between Dubai airports, hotels, residences, cruise terminals and private aviation terminals.",
+    href: "/airport-luggage-delivery-dubai",
   },
   {
-    title: "Small Moving Dubai",
+    title: "Hotel Luggage Transfer",
     description:
-      "Ideal for boxes, suitcases, mattresses, tables, chairs and a limited amount of household items.",
-    href: "/small-moving-dubai",
-    image: "/1000007436.jpg",
-  },
-  {
-    title: "IKEA Furniture Delivery Dubai",
-    description:
-      "Collection and delivery of flat-pack and small IKEA furniture items throughout Dubai.",
-    href: "/ikea-delivery-dubai",
-    image: "/hiace-delivery-van-dubai.jpg",
+      "Door-to-door baggage delivery between hotels, serviced apartments, villas, airports and tourist destinations.",
+    href: "/hotel-luggage-transfer-dubai",
   },
   {
     title: "Boxes Delivery Dubai",
     description:
-      "Fast and careful transport for moving boxes, cartons, personal belongings and business supplies.",
+      "Safe transport for moving boxes, cartons, documents, stock, equipment and packaged personal belongings.",
     href: "/boxes-delivery-dubai",
-    image: "/1000007423.jpg",
   },
   {
-    title: "Small Furniture Delivery Dubai",
+    title: "Small Moving Dubai",
     description:
-      "Transport for sofas, beds, tables, chairs, cabinets and other small furniture that fits safely in the van.",
+      "Practical moving service for studios, rooms, small apartments, staff accommodation and light office relocations.",
+    href: "/small-moving-dubai",
+  },
+  {
+    title: "Small Furniture Delivery",
+    description:
+      "Transport for sofas, beds, mattresses, tables, chairs, cabinets, shelves and other small furniture items.",
     href: "/small-furniture-delivery-dubai",
-    image: "/1000007437.jpg",
+  },
+  {
+    title: "Private Jet Luggage Transfer",
+    description:
+      "Discreet and punctual luggage delivery for VIP travellers, private aviation passengers and executive clients.",
+    href: "/private-jet-luggage-transfer-dubai",
+  },
+  {
+    title: "Exhibition & Event Delivery",
+    description:
+      "Transport for displays, exhibition materials, event equipment, promotional items, stands and business supplies.",
+    href: "/exhibition-event-delivery-dubai",
   },
   {
     title: "Same-Day Delivery Dubai",
     description:
-      "Quick collection and delivery for urgent items, subject to vehicle availability and route timing.",
+      "Fast collection and delivery for urgent items across Dubai, subject to vehicle and driver availability.",
     href: "/same-day-delivery-dubai",
-    image: "/1000007436.jpg",
-  },
-  {
-    title: "Hotel Luggage Transfer Dubai",
-    description:
-      "Easy hotel-to-hotel, hotel-to-airport and hotel-to-residence luggage transfers across Dubai.",
-    href: "/hotel-luggage-transfer-dubai",
-    image: "/1000007422.jpg",
-  },
-  {
-    title: "Exhibition & Event Delivery Dubai",
-    description:
-      "Transport for display items, boxes, stands, event materials and light exhibition equipment.",
-    href: "/exhibition-event-delivery-dubai",
-    image: "/1-ton-pickup-truck-man-van-dubai.jpg",
-  },
-  {
-    title: "Dubai to Other Emirates Delivery",
-    description:
-      "Van delivery from Dubai to Abu Dhabi, Sharjah, Ajman, Al Ain, RAK, Fujairah and Umm Al Quwain.",
-    href: "/dubai-to-other-emirates-delivery",
-    image: "/slide1.png",
   },
 ];
 
-const premiumAreas = [
-  "Palm Jumeirah",
-  "Emirates Hills",
-  "Dubai Hills Estate",
-  "Downtown Dubai",
-  "DIFC",
+const suitableFor = [
+  "Suitcases and travel bags",
+  "Moving boxes and cartons",
+  "Beds and mattresses",
+  "Sofas and chairs",
+  "Tables and desks",
+  "Televisions and displays",
+  "Office equipment",
+  "Shop and exhibition items",
+  "Bicycles and sports equipment",
+  "Packed household belongings",
+  "Small appliances",
+  "Business stock and supplies",
+];
+
+const locations = [
   "Dubai Marina",
-  "JBR",
-  "Bluewaters Island",
-  "Jumeirah",
-  "Dubai Harbour",
-  "City Walk",
+  "Jumeirah Beach Residence",
+  "Palm Jumeirah",
+  "Downtown Dubai",
   "Business Bay",
+  "Dubai International Financial Centre",
+  "Jumeirah",
+  "Emirates Hills",
   "Arabian Ranches",
-  "Jumeirah Golf Estates",
-  "The Lakes",
-  "The Meadows",
-  "The Springs",
+  "Dubai Hills Estate",
+  "Jumeirah Village Circle",
+  "Jumeirah Lake Towers",
+  "Bluewaters Island",
+  "City Walk",
+  "Al Barsha",
+  "Al Quoz",
+  "Dubai Silicon Oasis",
+  "Dubai Investment Park",
+  "Dubai South",
+  "Dubai Sports City",
+  "Motor City",
+  "International City",
+  "Mirdif",
+  "Deira",
+  "Bur Dubai",
+  "Al Karama",
+  "Al Nahda",
+  "Al Garhoud",
+  "Dubai Festival City",
   "Dubai Creek Harbour",
 ];
 
-const otherAreas = [
-  "JLT",
-  "JVC",
-  "JVT",
-  "Al Barsha",
-  "Barsha Heights",
-  "Al Sufouh",
-  "Dubai Internet City",
-  "Dubai Media City",
-  "Dubai Knowledge Park",
-  "Umm Suqeim",
-  "Al Wasl",
-  "Al Safa",
-  "Al Quoz",
-  "Meydan",
-  "Nad Al Sheba",
-  "Mirdif",
-  "Dubai Silicon Oasis",
-  "International City",
-  "Dragon Mart",
-  "Dubai Sports City",
-  "Motor City",
-  "Studio City",
-  "Dubai Production City",
-  "Discovery Gardens",
-  "The Gardens",
-  "Al Furjan",
-  "Dubai South",
-  "Expo City Dubai",
-  "Dubai Investment Park",
-  "Jebel Ali",
-  "Deira",
-  "Bur Dubai",
-  "Karama",
-  "Oud Metha",
-  "Al Garhoud",
-  "Al Qusais",
-  "Muhaisnah",
-  "Al Nahda",
-  "Hor Al Anz",
-  "Al Twar",
-  "Al Rashidiya",
-  "Al Warqa",
-  "Nad Al Hamar",
-  "Dubai Academic City",
-  "Town Square",
-  "Damac Hills",
-  "Damac Hills 2",
-  "Remraam",
-  "Mudon",
+const benefits = [
+  {
+    title: "Dedicated Van with Driver",
+    text:
+      "A suitable commercial van with an experienced driver is arranged according to your items, collection point and destination.",
+  },
+  {
+    title: "Direct Door-to-Door Transport",
+    text:
+      "Your belongings are collected from the agreed location and delivered directly to the destination without unnecessary handling.",
+  },
+  {
+    title: "Flexible Booking",
+    text:
+      "Book for one delivery, several stops, a few hours or a full working day, depending on your transport requirement.",
+  },
+  {
+    title: "Helper Available",
+    text:
+      "A helper can be arranged when assistance is required for carrying, loading, unloading or positioning larger items.",
+  },
+  {
+    title: "Dubai and UAE Coverage",
+    text:
+      "Transport is available across Dubai and for deliveries to Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah, Umm Al Quwain and Al Ain.",
+  },
+  {
+    title: "Clear Communication",
+    text:
+      "Share item photos, pickup location, destination and preferred timing by WhatsApp to receive a clear quotation.",
+  },
 ];
 
 const faqs = [
   {
-    question: "What items can you transport?",
+    question: "How much does a man with a van cost in Dubai?",
     answer:
-      "We transport luggage, boxes, suitcases, small furniture, mattresses, event materials and other items that fit safely inside the van. We do not advertise large apartment or full-house moving.",
+      "The price depends on the pickup and delivery locations, number and size of items, required time, parking access, number of helpers and whether dismantling or assembly is needed. Send the details by WhatsApp for an accurate quotation.",
   },
   {
-    question: "Do you provide service across all of Dubai?",
+    question: "Can I book only a van and driver?",
     answer:
-      "Yes. We cover premium communities, central Dubai, residential areas, industrial areas and locations across the city.",
+      "Yes. You can book a van with a professional driver for collection and delivery. A helper can also be added when loading or unloading assistance is required.",
   },
   {
-    question: "Can I book through WhatsApp?",
+    question: "Do you provide same-day service?",
     answer:
-      "Yes. Tap the WhatsApp button to open a blank chat and send your pickup location, drop-off location, item details and preferred time.",
+      "Same-day and urgent bookings are available depending on the schedule, distance and vehicle availability. Early booking is recommended.",
   },
   {
-    question: "Do you deliver outside Dubai?",
+    question: "Can you deliver luggage to Dubai Airport?",
     answer:
-      "Yes. Dubai-to-other-emirates delivery is available, including Abu Dhabi, Sharjah, Ajman, Al Ain, Ras Al Khaimah, Fujairah and Umm Al Quwain.",
+      "Yes. Luggage transfers can be arranged between residences, hotels, Dubai International Airport, Al Maktoum International Airport and private aviation terminals, subject to terminal access rules.",
+  },
+  {
+    question: "Do you move complete villas or large apartments?",
+    answer:
+      "The service is primarily designed for small moves, luggage, boxes, furniture and light commercial transport. For large moves, the requirements must be reviewed before confirmation.",
+  },
+  {
+    question: "Do you provide transport outside Dubai?",
+    answer:
+      "Yes. UAE-wide delivery is available to Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah, Umm Al Quwain and Al Ain.",
   },
 ];
 
-export const meta: MetaFunction = () => [
-  { title: "Man with a Van Dubai | Luggage & Small Moving Service" },
-  {
-    name: "description",
-    content:
-      "Man with a Van Dubai for luggage delivery, airport-to-hotel transfers, boxes, IKEA delivery and small moving. Call or WhatsApp +971 52 806 5642.",
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "MovingCompany",
+  name: "Man with a Van Dubai",
+  url: "https://manwithavanindubai.com/man-with-a-van-in-dubai",
+  image: "https://manwithavanindubai.com/1000007421.jpg",
+  telephone: "+971528065642",
+  description:
+    "Professional man with a van service in Dubai for luggage, boxes, small furniture, airport transfers, hotel delivery, office transport and UAE-wide delivery.",
+  areaServed: [
+    "Dubai",
+    "Abu Dhabi",
+    "Sharjah",
+    "Ajman",
+    "Ras Al Khaimah",
+    "Fujairah",
+    "Umm Al Quwain",
+    "Al Ain",
+  ],
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Dubai",
+    addressCountry: "AE",
   },
-];
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+971528065642",
+    contactType: "customer service",
+    availableLanguage: ["English", "Urdu", "Hindi"],
+  },
+  sameAs: ["https://wa.me/971528065642"],
+};
 
-export default function Index() {
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+};
+
+export default function ManWithAVanDubai() {
   return (
-    <main className="min-h-screen bg-white text-slate-900">
+    <main className="bg-white text-slate-900">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schema),
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema),
+        }}
+      />
+
+      {/* Hero Section */}
       <section className="relative overflow-hidden bg-slate-950 text-white">
-        <img
-          src="/1000007421.jpg"
-          alt="Man with a Van Dubai service vehicle"
-          className="absolute inset-0 h-full w-full object-cover opacity-40"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-slate-900/40" />
-        <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
-          <div className="max-w-3xl">
-            <p className="mb-4 inline-flex rounded-full bg-white/10 px-4 py-2 text-sm font-semibold ring-1 ring-white/20">
-              Luggage • Boxes • Small Moving • Furniture Delivery
+        <div className="absolute inset-0">
+          <img
+            src="/1000007421.jpg"
+            alt="Professional man with a van service in Dubai"
+            className="h-full w-full object-cover opacity-35"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-slate-950/40" />
+        </div>
+
+        <div className="relative mx-auto grid max-w-7xl gap-10 px-5 py-20 md:px-8 lg:grid-cols-2 lg:items-center lg:py-28">
+          <div>
+            <p className="mb-4 inline-flex rounded-full border border-amber-400/40 bg-amber-400/10 px-4 py-2 text-sm font-semibold text-amber-300">
+              Professional Van & Driver Service Across Dubai
             </p>
-            <h1 className="text-4xl font-black leading-tight sm:text-5xl lg:text-7xl">
+
+            <h1 className="text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">
               Man with a Van Dubai
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200 sm:text-xl">
-              Reliable van and driver service for luggage delivery, airport and
-              hotel transfers, boxes, IKEA items, small furniture and light
-              moving across Dubai and the UAE.
+
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200">
+              Reliable door-to-door transport for luggage, boxes, small
+              furniture, studio moves, airport transfers, hotel deliveries,
+              office equipment, exhibitions and business items across Dubai
+              and the UAE.
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <a
                 href={phoneLink}
-                className="rounded-xl bg-blue-600 px-7 py-4 text-center text-lg font-bold text-white transition hover:bg-blue-700"
+                className="rounded-xl bg-amber-400 px-7 py-4 text-center text-lg font-bold text-slate-950 shadow-lg transition hover:bg-amber-300"
               >
                 Call {phoneDisplay}
               </a>
+
               <a
                 href={whatsappLink}
                 target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-xl bg-green-500 px-7 py-4 text-center text-lg font-bold text-white transition hover:bg-green-600"
+                rel="noreferrer"
+                className="rounded-xl bg-green-600 px-7 py-4 text-center text-lg font-bold text-white shadow-lg transition hover:bg-green-500"
               >
-                WhatsApp
+                WhatsApp for a Quote
               </a>
             </div>
-            <div className="mt-8 grid max-w-2xl grid-cols-1 gap-3 text-sm sm:grid-cols-3">
-              <div className="rounded-xl bg-white/10 p-4 ring-1 ring-white/15">
-                Fast response
+
+            <div className="mt-8 grid grid-cols-2 gap-4 text-sm sm:grid-cols-4">
+              <div className="rounded-xl border border-white/15 bg-white/10 p-4">
+                <strong className="block text-lg">Dubai Wide</strong>
+                <span className="text-slate-300">All major areas</span>
               </div>
-              <div className="rounded-xl bg-white/10 p-4 ring-1 ring-white/15">
-                Clean cargo vans
+
+              <div className="rounded-xl border border-white/15 bg-white/10 p-4">
+                <strong className="block text-lg">UAE Delivery</strong>
+                <span className="text-slate-300">All Emirates</span>
               </div>
-              <div className="rounded-xl bg-white/10 p-4 ring-1 ring-white/15">
-                Dubai-wide coverage
+
+              <div className="rounded-xl border border-white/15 bg-white/10 p-4">
+                <strong className="block text-lg">Flexible</strong>
+                <span className="text-slate-300">Single or hourly</span>
+              </div>
+
+              <div className="rounded-xl border border-white/15 bg-white/10 p-4">
+                <strong className="block text-lg">Direct</strong>
+                <span className="text-slate-300">Door to door</span>
               </div>
             </div>
+          </div>
+
+          <div className="rounded-3xl border border-white/15 bg-white/10 p-4 shadow-2xl backdrop-blur">
+            <img
+              src="/1000007437.jpg"
+              alt="Van with driver for deliveries and small moves in Dubai"
+              className="h-[320px] w-full rounded-2xl object-cover sm:h-[430px]"
+            />
           </div>
         </div>
       </section>
 
-      <section className="bg-slate-50 px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="font-bold uppercase tracking-widest text-blue-600">
-              Our services
+      {/* Introduction */}
+      <section className="mx-auto max-w-7xl px-5 py-16 md:px-8 lg:py-24">
+        <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-[0.22em] text-amber-600">
+              Reliable Local Transport
             </p>
-            <h2 className="mt-3 text-3xl font-black sm:text-4xl">
-              Delivery and Small Moving Services in Dubai
+
+            <h2 className="mt-3 text-3xl font-black leading-tight sm:text-4xl">
+              A Professional Man with a Van Service for Everyday Transport
             </h2>
-            <p className="mt-4 text-lg text-slate-600">
-              Select a service to view full details. Every service is also linked
-              directly from this home page.
+
+            <p className="mt-6 leading-8 text-slate-600">
+              When your items are too large for a car but do not require a
+              large moving truck, our man with a van service provides a
+              practical and cost-effective solution. We handle collections,
+              deliveries and small relocations for residents, tourists,
+              hotels, offices, shops and businesses throughout Dubai.
+            </p>
+
+            <p className="mt-4 leading-8 text-slate-600">
+              Our service is suitable for one item, several boxes, luggage,
+              furniture, business equipment or a complete small move. Every
+              booking is planned according to the item size, access,
+              collection location, destination and required timing.
             </p>
           </div>
 
-          <div className="mt-12 grid gap-7 md:grid-cols-2 lg:grid-cols-3">
+          <div className="rounded-3xl bg-slate-100 p-7 sm:p-10">
+            <h3 className="text-2xl font-black">
+              Send These Details for a Quick Quote
+            </h3>
+
+            <ol className="mt-6 space-y-4">
+              {[
+                "Photos or a clear list of the items",
+                "Exact pickup location",
+                "Exact delivery location",
+                "Preferred date and time",
+                "Floor number and lift availability",
+                "Whether a helper is required",
+              ].map((item, index) => (
+                <li
+                  key={item}
+                  className="flex items-start gap-4 rounded-xl bg-white p-4 shadow-sm"
+                >
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-slate-950 font-bold text-white">
+                    {index + 1}
+                  </span>
+                  <span className="pt-1 font-medium text-slate-700">
+                    {item}
+                  </span>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      {/* Services */}
+      <section className="bg-slate-100 py-16 lg:py-24">
+        <div className="mx-auto max-w-7xl px-5 md:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-bold uppercase tracking-[0.22em] text-amber-600">
+              Complete Van Services
+            </p>
+
+            <h2 className="mt-3 text-3xl font-black sm:text-4xl">
+              What Our Man with a Van Service Covers
+            </h2>
+
+            <p className="mt-5 leading-8 text-slate-600">
+              Choose a dedicated service page below or contact us directly
+              with your transport details.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
               <article
                 key={service.title}
-                className="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-xl"
+                className="flex flex-col rounded-2xl bg-white p-7 shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-xl"
               >
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="h-56 w-full object-cover"
-                  loading="lazy"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-extrabold">{service.title}</h3>
-                  <p className="mt-3 leading-7 text-slate-600">
-                    {service.description}
-                  </p>
-                  <div className="mt-6 flex gap-3">
-                    <a
-                      href={service.href}
-                      className="flex-1 rounded-lg bg-slate-900 px-4 py-3 text-center font-bold text-white hover:bg-slate-800"
-                    >
-                      View Service
-                    </a>
-                    <a
-                      href={whatsappLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`WhatsApp about ${service.title}`}
-                      className="rounded-lg bg-green-500 px-4 py-3 font-bold text-white hover:bg-green-600"
-                    >
-                      WhatsApp
-                    </a>
-                  </div>
-                </div>
+                <h3 className="text-xl font-black">{service.title}</h3>
+
+                <p className="mt-4 flex-1 leading-7 text-slate-600">
+                  {service.description}
+                </p>
+
+                <a
+                  href={service.href}
+                  className="mt-6 font-bold text-amber-700 hover:text-amber-600"
+                >
+                  View Service →
+                </a>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-center">
+      {/* Suitable Items */}
+      <section className="mx-auto max-w-7xl px-5 py-16 md:px-8 lg:py-24">
+        <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+          <div className="overflow-hidden rounded-3xl">
+            <img
+              src="/1000007421.jpg"
+              alt="Dubai van delivery service for boxes luggage and furniture"
+              className="h-[420px] w-full object-cover"
+            />
+          </div>
+
           <div>
-            <p className="font-bold uppercase tracking-widest text-blue-600">
-              Real service video
+            <p className="text-sm font-bold uppercase tracking-[0.22em] text-amber-600">
+              Items We Transport
             </p>
+
             <h2 className="mt-3 text-3xl font-black sm:text-4xl">
-              See the Van Service in Action
+              Suitable for Personal, Residential and Business Deliveries
             </h2>
-            <p className="mt-5 text-lg leading-8 text-slate-600">
-              The existing video remains on the home page in one clear section,
-              helping customers see the vehicle and service before booking.
-            </p>
-            <div className="mt-7 space-y-4">
-              {[
-                "Suitable for luggage, boxes and limited furniture",
-                "Call or WhatsApp directly without an email form",
-                "WhatsApp opens without a pre-written message",
-                "Service available across Dubai and other emirates",
-              ].map((item) => (
-                <div key={item} className="flex gap-3">
-                  <span className="font-black text-green-600">✓</span>
-                  <span className="text-slate-700">{item}</span>
+
+            <div className="mt-8 grid gap-3 sm:grid-cols-2">
+              {suitableFor.map((item) => (
+                <div
+                  key={item}
+                  className="flex items-center gap-3 rounded-xl border border-slate-200 p-4"
+                >
+                  <span className="flex h-6 w-6 items-center justify-center rounded-full bg-green-100 text-sm font-black text-green-700">
+                    ✓
+                  </span>
+                  <span className="font-semibold text-slate-700">
+                    {item}
+                  </span>
                 </div>
               ))}
             </div>
           </div>
-          <div className="overflow-hidden rounded-2xl bg-black shadow-2xl">
-            <video
-              className="h-auto w-full"
-              controls
-              preload="metadata"
-              poster="/video.png"
-            >
-              <source src="/1000007429.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
         </div>
       </section>
 
-      <section className="bg-slate-950 px-4 py-16 text-white sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
+      {/* Why Choose Us */}
+      <section className="bg-slate-950 py-16 text-white lg:py-24">
+        <div className="mx-auto max-w-7xl px-5 md:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="font-bold uppercase tracking-widest text-blue-400">
-              Service areas
+            <p className="text-sm font-bold uppercase tracking-[0.22em] text-amber-400">
+              Professional Service
             </p>
+
             <h2 className="mt-3 text-3xl font-black sm:text-4xl">
-              Man with a Van Across Dubai
+              Why Customers Choose Our Van Service
             </h2>
-            <p className="mt-4 text-slate-300">
-              Premium locations are shown first, followed by wider city coverage.
-            </p>
           </div>
 
-          <div className="mt-10">
-            <h3 className="text-xl font-extrabold text-amber-300">
-              Premium Dubai Areas
-            </h3>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {premiumAreas.map((area) => (
-                <span
-                  key={area}
-                  className="rounded-full bg-white/10 px-4 py-2 text-sm ring-1 ring-white/15"
-                >
-                  {area}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          <div className="mt-10">
-            <h3 className="text-xl font-extrabold">More Dubai Areas</h3>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {otherAreas.map((area) => (
-                <span
-                  key={area}
-                  className="rounded-full bg-white/5 px-4 py-2 text-sm text-slate-200 ring-1 ring-white/10"
-                >
-                  {area}
-                </span>
-              ))}
-            </div>
-            <p className="mt-6 text-slate-300">
-              We also serve other locations throughout Dubai. Call or WhatsApp
-              to confirm your pickup and drop-off area.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-slate-50 px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="font-bold uppercase tracking-widest text-blue-600">
-              Customer feedback
-            </p>
-            <h2 className="mt-3 text-3xl font-black sm:text-4xl">
-              Customer Reviews
-            </h2>
-            <p className="mt-4 text-lg text-slate-600">
-              Add genuine customer reviews here as they are collected. This
-              section avoids publishing invented ratings or testimonials.
-            </p>
-          </div>
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {[
-              "Reliable pickup and delivery service.",
-              "Professional communication and careful handling.",
-              "Convenient van service for luggage and boxes.",
-            ].map((text) => (
+          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {benefits.map((benefit) => (
               <div
-                key={text}
-                className="rounded-2xl bg-white p-7 shadow-sm ring-1 ring-slate-200"
+                key={benefit.title}
+                className="rounded-2xl border border-white/10 bg-white/5 p-7"
               >
-                <div className="text-amber-500">★★★★★</div>
-                <p className="mt-4 leading-7 text-slate-700">{text}</p>
-                <p className="mt-5 text-sm font-bold text-slate-500">
-                  Customer review placeholder
+                <h3 className="text-xl font-black text-amber-300">
+                  {benefit.title}
+                </h3>
+                <p className="mt-4 leading-7 text-slate-300">
+                  {benefit.text}
                 </p>
               </div>
             ))}
@@ -425,82 +539,245 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-4xl">
-          <div className="text-center">
-            <p className="font-bold uppercase tracking-widest text-blue-600">
-              Helpful information
+      {/* Airport, Hotel and VIP */}
+      <section className="mx-auto max-w-7xl px-5 py-16 md:px-8 lg:py-24">
+        <div className="rounded-3xl bg-gradient-to-br from-amber-50 to-slate-100 p-7 sm:p-12">
+          <div className="grid gap-10 lg:grid-cols-2">
+            <div>
+              <p className="text-sm font-bold uppercase tracking-[0.22em] text-amber-700">
+                Airport, Hotel & VIP Transfers
+              </p>
+
+              <h2 className="mt-3 text-3xl font-black sm:text-4xl">
+                Luggage Transport for Travellers and Executive Clients
+              </h2>
+
+              <p className="mt-6 leading-8 text-slate-600">
+                We provide scheduled luggage collection and delivery between
+                Dubai International Airport, Al Maktoum International Airport,
+                hotels, villas, serviced apartments, cruise terminals and
+                private aviation facilities.
+              </p>
+
+              <p className="mt-4 leading-8 text-slate-600">
+                The service is suitable for families, groups, tourists,
+                business travellers, cabin crew and VIP passengers who need
+                additional luggage space or separate baggage transport.
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-white p-7 shadow-sm">
+              <h3 className="text-xl font-black">
+                Popular Transfer Routes
+              </h3>
+
+              <ul className="mt-6 space-y-3 text-slate-700">
+                {[
+                  "Dubai Airport to hotel",
+                  "Hotel to Dubai Airport",
+                  "Hotel to hotel luggage transfer",
+                  "Residence to airport",
+                  "Airport to villa or apartment",
+                  "DXB to Abu Dhabi",
+                  "Dubai to Al Maktoum Airport",
+                  "Private terminal to hotel",
+                ].map((route) => (
+                  <li
+                    key={route}
+                    className="flex items-center gap-3 border-b border-slate-100 pb-3"
+                  >
+                    <span className="text-amber-600">●</span>
+                    <span className="font-medium">{route}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Areas */}
+      <section className="bg-slate-100 py-16 lg:py-24">
+        <div className="mx-auto max-w-7xl px-5 md:px-8">
+          <div className="max-w-3xl">
+            <p className="text-sm font-bold uppercase tracking-[0.22em] text-amber-600">
+              Dubai Service Areas
             </p>
+
             <h2 className="mt-3 text-3xl font-black sm:text-4xl">
+              Man with a Van Available Across Dubai
+            </h2>
+
+            <p className="mt-5 leading-8 text-slate-600">
+              Collection and delivery can be arranged in residential,
+              commercial, hotel, airport and industrial areas throughout
+              Dubai.
+            </p>
+          </div>
+
+          <div className="mt-10 flex flex-wrap gap-3">
+            {locations.map((location) => (
+              <span
+                key={location}
+                className="rounded-full bg-white px-5 py-3 font-semibold text-slate-700 shadow-sm ring-1 ring-slate-200"
+              >
+                {location}
+              </span>
+            ))}
+          </div>
+
+          <div className="mt-10 rounded-2xl bg-white p-7 shadow-sm">
+            <h3 className="text-xl font-black">
+              Delivery to All Emirates
+            </h3>
+
+            <p className="mt-4 leading-8 text-slate-600">
+              We also arrange transport from Dubai to Abu Dhabi, Sharjah,
+              Ajman, Ras Al Khaimah, Fujairah, Umm Al Quwain and Al Ain.
+              Long-distance quotations are based on the route, items, loading
+              requirements and waiting time.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Booking Process */}
+      <section className="mx-auto max-w-7xl px-5 py-16 md:px-8 lg:py-24">
+        <div className="text-center">
+          <p className="text-sm font-bold uppercase tracking-[0.22em] text-amber-600">
+            Simple Booking Process
+          </p>
+
+          <h2 className="mt-3 text-3xl font-black sm:text-4xl">
+            Book Your Van in Four Easy Steps
+          </h2>
+        </div>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          {[
+            {
+              number: "01",
+              title: "Send Your Details",
+              text:
+                "Share the items, pickup location, destination and preferred time.",
+            },
+            {
+              number: "02",
+              title: "Receive a Quote",
+              text:
+                "We review the job and provide a clear quotation based on your requirements.",
+            },
+            {
+              number: "03",
+              title: "Confirm Booking",
+              text:
+                "Confirm the date, time, vehicle and any helper requirement.",
+            },
+            {
+              number: "04",
+              title: "Collection & Delivery",
+              text:
+                "The driver arrives at the agreed location and completes the delivery.",
+            },
+          ].map((step) => (
+            <div
+              key={step.number}
+              className="rounded-2xl border border-slate-200 p-7"
+            >
+              <span className="text-4xl font-black text-amber-500">
+                {step.number}
+              </span>
+              <h3 className="mt-5 text-xl font-black">{step.title}</h3>
+              <p className="mt-3 leading-7 text-slate-600">{step.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="bg-slate-100 py-16 lg:py-24">
+        <div className="mx-auto max-w-4xl px-5 md:px-8">
+          <div className="text-center">
+            <p className="text-sm font-bold uppercase tracking-[0.22em] text-amber-600">
               Frequently Asked Questions
+            </p>
+
+            <h2 className="mt-3 text-3xl font-black sm:text-4xl">
+              Man with a Van Dubai FAQs
             </h2>
           </div>
-          <div className="mt-10 space-y-4">
+
+          <div className="mt-12 space-y-4">
             {faqs.map((faq) => (
               <details
                 key={faq.question}
-                className="group rounded-2xl border border-slate-200 bg-white p-6"
+                className="group rounded-2xl bg-white p-6 shadow-sm"
               >
-                <summary className="cursor-pointer list-none text-lg font-extrabold">
+                <summary className="cursor-pointer list-none pr-6 text-lg font-black">
                   {faq.question}
                 </summary>
-                <p className="mt-4 leading-7 text-slate-600">{faq.answer}</p>
+
+                <p className="mt-4 leading-8 text-slate-600">
+                  {faq.answer}
+                </p>
               </details>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-blue-600 px-4 py-16 text-white sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-black sm:text-4xl">
-            Book Man with a Van Dubai
+      {/* Final CTA */}
+      <section className="bg-amber-400">
+        <div className="mx-auto max-w-7xl px-5 py-14 text-center md:px-8 lg:py-20">
+          <h2 className="text-3xl font-black text-slate-950 sm:text-4xl">
+            Need a Man with a Van in Dubai?
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-blue-100">
-            Contact us directly by phone or WhatsApp. No email form is required.
+
+          <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-slate-800">
+            Send your item photos, pickup location, destination and preferred
+            timing for a quick quotation.
           </p>
-          <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+
+          <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <a
               href={phoneLink}
-              className="rounded-xl bg-white px-7 py-4 text-lg font-bold text-blue-700 hover:bg-blue-50"
+              className="rounded-xl bg-slate-950 px-8 py-4 text-lg font-bold text-white transition hover:bg-slate-800"
             >
               Call {phoneDisplay}
             </a>
+
             <a
               href={whatsappLink}
               target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-xl bg-green-500 px-7 py-4 text-lg font-bold text-white hover:bg-green-600"
+              rel="noreferrer"
+              className="rounded-xl bg-green-600 px-8 py-4 text-lg font-bold text-white transition hover:bg-green-500"
             >
-              Open WhatsApp
+              Chat on WhatsApp
             </a>
           </div>
         </div>
       </section>
 
-      <footer className="bg-slate-950 px-4 py-10 text-white sm:px-6 lg:px-8">
-        <div className="mx-auto flex max-w-7xl flex-col gap-6 text-center md:flex-row md:items-center md:justify-between md:text-left">
-          <div>
-            <p className="text-xl font-black">Man with a Van Dubai</p>
-            <p className="mt-2 text-sm text-slate-400">
-              Luggage delivery, small moving and van transport across Dubai.
-            </p>
-          </div>
-          <div className="flex flex-col gap-2 text-sm md:items-end">
-            <a href={phoneLink} className="font-bold hover:text-blue-300">
-              {phoneDisplay}
-            </a>
-            <a
-              href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-bold text-green-400 hover:text-green-300"
-            >
-              WhatsApp
-            </a>
-          </div>
-        </div>
-      </footer>
+      {/* Mobile Fixed Buttons */}
+      <div className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-2 gap-2 border-t border-slate-200 bg-white p-2 shadow-2xl md:hidden">
+        <a
+          href={phoneLink}
+          className="rounded-lg bg-slate-950 px-4 py-3 text-center font-bold text-white"
+        >
+          Call Now
+        </a>
+
+        <a
+          href={whatsappLink}
+          target="_blank"
+          rel="noreferrer"
+          className="rounded-lg bg-green-600 px-4 py-3 text-center font-bold text-white"
+        >
+          WhatsApp
+        </a>
+      </div>
+
+      <div className="h-16 md:hidden" />
     </main>
   );
 }
