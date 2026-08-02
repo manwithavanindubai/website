@@ -9,49 +9,49 @@ const services = [
     title: "Man with a Van Dubai",
     text: "Van with driver for luggage, boxes, furniture, small moves, hotel transfers and business deliveries.",
     href: "/man-with-a-van-in-dubai",
-    image: "/images/home-van-dubai-night.jpg",
+    image: "/1-ton-pickup-truck-man-van-dubai.jpg",
   },
   {
     title: "Luggage Delivery Dubai",
     text: "Airport, hotel, residence and inter-hotel luggage delivery for guests, families and business travellers.",
     href: "/luggage-delivery-dubai",
-    image: "/images/van-cargo-space-clean.jpg",
+    image: "/1000007422.jpg",
   },
   {
     title: "Small Moving Dubai",
     text: "Practical transport for studios, selected apartment items, office furniture and light moving jobs.",
     href: "/small-moving-dubai",
-    image: "/images/van-loaded-small-moving.jpg",
+    image: "/1000007436.jpg",
   },
   {
     title: "Boxes Delivery Dubai",
     text: "Moving cartons, office boxes, storage boxes, business stock and packed personal belongings.",
     href: "/boxes-delivery-dubai",
-    image: "/images/van-large-cargo-space.jpg",
+    image: "/1000007423.jpg",
   },
   {
     title: "IKEA Furniture Delivery Dubai",
     text: "Store pickup, flat-pack furniture transport and selected assembly support across Dubai.",
     href: "/ikea-furniture-delivery-dubai",
-    image: "/images/high-roof-van-dubai.jpg",
+    image: "/hiace-delivery-van-dubai.jpg",
   },
   {
     title: "Hotel Luggage Transfer Dubai",
     text: "Hotel-to-hotel, hotel-to-airport and residence luggage transfer with direct van delivery.",
     href: "/hotel-luggage-transfer-dubai",
-    image: "/images/home-van-dubai-night.jpg",
+    image: "/1-ton-pickup-truck-man-van-dubai.jpg",
   },
   {
     title: "VIP Airport Luggage Delivery",
     text: "Premium landside luggage transport for DXB, DWC, luxury hotels, residences and Abu Dhabi routes.",
     href: "/airport-luggage-delivery-dubai",
-    image: "/images/high-roof-van-dubai.jpg",
+    image: "/hiace-delivery-van-dubai.jpg",
   },
   {
     title: "Private Jet Luggage Transfer",
     text: "Pre-arranged landside baggage transport for private aviation terminals, luxury hotels, villas and marinas.",
     href: "/private-jet-luggage-transfer-dubai",
-    image: "/images/van-cargo-space-clean.jpg",
+    image: "/1000007422.jpg",
   },
 ];
 
@@ -236,7 +236,7 @@ export const meta: MetaFunction = () => [
   },
   {
     property: "og:image",
-    content: "https://manwithavanindubai.com/images/home-van-dubai-night.jpg",
+    content: "https://manwithavanindubai.com/1-ton-pickup-truck-man-van-dubai.jpg",
   },
   {
     name: "twitter:card",
@@ -250,7 +250,7 @@ export default function Index() {
     "@type": "LocalBusiness",
     name: "Man with a Van Dubai",
     url: "https://manwithavanindubai.com/",
-    image: "https://manwithavanindubai.com/images/home-van-dubai-night.jpg",
+    image: "https://manwithavanindubai.com/1-ton-pickup-truck-man-van-dubai.jpg",
     telephone: "+971528065642",
     description:
       "Professional van with driver service for luggage, boxes, furniture, small moving, airport transfers, hotel deliveries and business transport.",
@@ -308,7 +308,7 @@ export default function Index() {
 
       <section className="relative overflow-hidden bg-slate-950 text-white">
         <img
-          src="/images/home-van-dubai-night.jpg"
+          src="/1-ton-pickup-truck-man-van-dubai.jpg"
           alt="White cargo van in Dubai for moving and delivery"
           className="absolute inset-0 h-full w-full object-cover opacity-40"
         />
@@ -391,18 +391,18 @@ export default function Index() {
 
           <div className="grid gap-5">
             <img
-              src="/images/high-roof-van-dubai.jpg"
+              src="/hiace-delivery-van-dubai.jpg"
               alt="High roof cargo van for moving in Dubai"
               className="h-80 w-full rounded-3xl object-cover shadow-2xl"
             />
             <div className="grid gap-5 sm:grid-cols-2">
               <img
-                src="/images/van-cargo-space-clean.jpg"
+                src="/1000007422.jpg"
                 alt="Clean enclosed cargo space inside Dubai delivery van"
                 className="h-56 w-full rounded-2xl object-cover shadow-lg"
               />
               <img
-                src="/images/van-loaded-small-moving.jpg"
+                src="/1000007436.jpg"
                 alt="Furniture and luggage loaded for small moving in Dubai"
                 className="h-56 w-full rounded-2xl object-cover shadow-lg"
               />
@@ -476,7 +476,7 @@ export default function Index() {
 
           <div className="overflow-hidden rounded-3xl bg-slate-950 text-white">
             <img
-              src="/images/van-large-cargo-space.jpg"
+              src="/1000007423.jpg"
               alt="Large cargo space for boxes and furniture delivery in Dubai"
               className="h-72 w-full object-cover"
             />
