@@ -36,8 +36,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           name="keywords"
           content="man with van Dubai, pickup truck rental, delivery van, cargo transport, luggage delivery, rubbish removal, Dubai moving services"
         />
-        <title>
-          Van with Man Dubai - Professional Man & Van Services in Dubai
+        <title>Man with a Van Dubai | Airport-to-Hotel Luggage Delivery & Same-Day Movers
         </title>
         <link rel="icon" href="/favicon.ico" />
         <Meta />
