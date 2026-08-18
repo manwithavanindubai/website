@@ -1,9 +1,8 @@
 import type { MetaFunction } from "@remix-run/cloudflare";
 
-const phoneDisplay = "+971 52 806 5642";
-const phoneLink = "tel:+971528065642";
-const whatsappLink = "https://wa.me/971528065642";
-
+const phoneDisplay = "+971 55 197 2617";
+const phoneLink = "tel:+971551972617";
+const whatsappLink = "https://wa.me/971551972617";
 const services = [
   { title: "Luggage Delivery Dubai", text: "Airport, hotel, home and inter-hotel luggage transport.", href: "/luggage-delivery-dubai" },
   { title: "Small Moving Dubai", text: "Studio, partial apartment, office and selected furniture moves.", href: "/small-moving-dubai" },
