@@ -1,8 +1,8 @@
 import type { MetaFunction } from "@remix-run/cloudflare";
 
-const phoneDisplay = "+971 52 806 5642";
-const phoneLink = "tel:+971528065642";
-const whatsappLink = "https://wa.me/971528065642";
+const phoneDisplay = "+971 55 197 2617";
+const phoneLink = "tel:+971551972617";
+const whatsappLink = "https://wa.me/971551972617";
 
 const terminals = [
   {
