@@ -13,6 +13,9 @@ export async function loader({ request }: LoaderFunctionArgs) {
     "/man-with-a-van-in-dubai",
     "/private-jet-luggage-transfer-dubai",
     "/small-moving-dubai",
+    "/single-item-movers-dubai",
+"/hire-removal-van-dubai",
+"/moving-van-dubai",
   ];
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
