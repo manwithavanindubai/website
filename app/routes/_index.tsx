@@ -5,12 +5,37 @@ const PHONE_LINK = "tel:+971551972617";
 const WHATSAPP_LINK = "https://wa.me/971551972617";
 
 const services = [
+  
   {
     title: "Man with a Van Dubai",
     text: "Enclosed cargo van with driver for luggage, boxes, furniture, hotel transfers, business deliveries and light moving jobs.",
     href: "/man-with-a-van-in-dubai",
     image: "/hiace-delivery-van-dubai.jpg",
   },
+  {
+  title: "Man With Van Near Me",
+  text: "Man with van near me in Dubai for moving, boxes, furniture and direct pickup and delivery.",
+  href: "/man-with-van-near-me",
+  image: "/hiace-delivery-van-dubai.jpg",
+},
+  {
+  title: "Man With A Van Service",
+  text: "Professional man with a van service in Dubai for moving, boxes, furniture and direct pickup and delivery.",
+  href: "/man-with-a-van-service",
+  image: "/hiace-delivery-van-dubai.jpg",
+},
+  {
+  title: "Delivery Van With Man",
+  text: "Delivery van with man in Dubai for boxes, furniture, luggage and direct pickup and delivery.",
+  href: "/delivery-van-with-man",
+  image: "/hiace-delivery-van-dubai.jpg",
+},
+  {
+  title: "Hire Removal Van",
+  text: "Hire removal van in Dubai with driver for small moving, boxes, furniture and direct pickup and delivery.",
+  href: "/hire-removal-van",
+  image: "/hiace-delivery-van-dubai.jpg",
+},
   {
     title: "Airport Luggage Delivery Dubai",
     text: "Pre-arranged luggage delivery from DXB or DWC airport to hotels, homes, serviced apartments and residences.",
