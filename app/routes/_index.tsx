@@ -194,7 +194,7 @@ export const meta: MetaFunction = () => [
   {
     name: "description",
     content:
-      "Man with a van Dubai for airport-to-hotel luggage delivery, same-day small movers, boxes, furniture and hotel transfers. Call or WhatsApp +971 52 806 5642.",
+      "Man with a van Dubai for airport-to-hotel luggage delivery, same-day small movers, boxes, furniture and hotel transfers. Call or WhatsApp +971 55 197 2617.",
   },
   {
     tagName: "link",
