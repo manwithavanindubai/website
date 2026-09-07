@@ -147,7 +147,7 @@ export const meta: MetaFunction = () => [
   {
     name: "description",
     content:
-      "IKEA furniture delivery Dubai for store pickup, flat-pack transport, furniture moving and assembly support. Call or WhatsApp +971 52 806 5642.",
+      "IKEA furniture delivery Dubai for store pickup, flat-pack transport, furniture moving and assembly support. Call or WhatsApp +971 55 197 2617.",
   },
   {
     tagName: "link",
@@ -196,7 +196,7 @@ export default function IkeaFurnitureDeliveryDubai() {
       "@type": "LocalBusiness",
       name: "Man with a Van Dubai",
       url: "https://manwithavanindubai.com",
-      telephone: "+971528065642",
+      telephone: "+971551972617",
       areaServed: "Dubai, United Arab Emirates",
     },
   };
