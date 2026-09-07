@@ -236,7 +236,7 @@ export default function Index() {
     name: "Man with a Van Dubai",
     url: "https://manwithavanindubai.com/",
     image: "https://manwithavanindubai.com/hiace-delivery-van-dubai.jpg",
-    telephone: "+971528065642",
+    telephone: "+971551972617",
     description:
       "Cargo van with driver for airport-to-hotel luggage delivery, same-day small movers, boxes, furniture and hotel transfers across Dubai.",
     areaServed: [
