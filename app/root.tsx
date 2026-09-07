@@ -42,16 +42,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
 />
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          name="description"
-          content="Professional Man with Van services in Dubai. Affordable pickup truck rental with driver, delivery van hire, luggage delivery, and cargo transport. Call +971551972617"
-        />
-        <meta
-          name="keywords"
-          content="man with van Dubai, pickup truck rental, delivery van, cargo transport, luggage delivery, rubbish removal, Dubai moving services"
-        />
-        <title>Man with a Van Dubai | Airport-to-Hotel Luggage Delivery & Same-Day Movers
-        </title>
+        <link rel="icon" href="/favicon.ico" />
+<Meta />
+<Links />
         <link rel="icon" href="/favicon.ico" />
         <Meta />
         <Links />
