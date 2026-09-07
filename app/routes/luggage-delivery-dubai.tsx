@@ -147,7 +147,7 @@ export const meta: MetaFunction = () => [
   {
     name: "description",
     content:
-      "Luggage delivery service Dubai for airport, hotel, home and inter-hotel transfers. Call or WhatsApp +971 52 806 5642 for a direct quote.",
+      "Luggage delivery service Dubai for airport, hotel, home and inter-hotel transfers. Call or WhatsApp +971 55 197 2617 for a direct quote.",
   },
 ];
 
