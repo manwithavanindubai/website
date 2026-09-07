@@ -182,7 +182,7 @@ export const meta: MetaFunction = () => [
   {
     name: "description",
     content:
-      "VIP airport luggage delivery Dubai for DXB terminals, DWC, private aviation terminals, luxury hotels and Abu Dhabi airport transfers. Call +971 52 806 5642.",
+      "VIP airport luggage delivery Dubai for DXB terminals, DWC, private aviation terminals, luxury hotels and Abu Dhabi airport transfers. Call +971 55 197 2617.",
   },
   {
     tagName: "link",
