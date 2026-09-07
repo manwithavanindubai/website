@@ -45,9 +45,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <link rel="icon" href="/favicon.ico" />
 <Meta />
 <Links />
-        <link rel="icon" href="/favicon.ico" />
-        <Meta />
-        <Links />
+        
       </head>
       <body className="bg-white text-gray-900 font-inter">
         {children}
