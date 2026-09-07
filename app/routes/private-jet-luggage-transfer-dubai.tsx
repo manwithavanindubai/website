@@ -192,7 +192,7 @@ export const meta: MetaFunction = () => [
   {
     name: "description",
     content:
-      "Private jet luggage transfer Dubai for Jetex, ExecuJet, DC Aviation Al-Futtaim, RoyalJet, luxury hotels, villas and marinas. Call +971 52 806 5642.",
+      "Private jet luggage transfer Dubai for Jetex, ExecuJet, DC Aviation Al-Futtaim, RoyalJet, luxury hotels, villas and marinas. Call +971 55 197 2617.",
   },
   {
     tagName: "link",
@@ -246,7 +246,7 @@ export default function PrivateJetLuggageTransferDubai() {
       "@type": "LocalBusiness",
       name: "Man with a Van Dubai",
       url: "https://manwithavanindubai.com",
-      telephone: "+971528065642",
+      telephone: "+971551972617",
       areaServed: "United Arab Emirates",
     },
   };
