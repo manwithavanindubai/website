@@ -169,7 +169,7 @@ export const meta: MetaFunction = () => [
   {
     name: "description",
     content:
-      "Hotel luggage transfer Dubai for hotel-to-hotel, airport, residence and family luggage delivery. Call or WhatsApp +971 52 806 5642.",
+      "Hotel luggage transfer Dubai for hotel-to-hotel, airport, residence and family luggage delivery. Call or WhatsApp +971 55 197 2617.",
   },
   {
     tagName: "link",
@@ -218,7 +218,7 @@ export default function HotelLuggageTransferDubai() {
       "@type": "LocalBusiness",
       name: "Man with a Van Dubai",
       url: "https://manwithavanindubai.com",
-      telephone: "+971528065642",
+      telephone: "+971551972617",
       areaServed: "Dubai, United Arab Emirates",
     },
   };
