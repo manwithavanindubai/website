@@ -79,7 +79,7 @@ const faqs = [
 
 export const meta: MetaFunction = () => [
   { title: "Man with a Van Dubai | Van with Driver for Moving & Delivery" },
-  { name: "description", content: "Professional man with a van Dubai service for luggage, boxes, furniture, small moving, airport and hotel transfers. Call or WhatsApp +971 52 806 5642." },
+  { name: "description", content: "Professional man with a van Dubai service for luggage, boxes, furniture, small moving, airport and hotel transfers. Call or WhatsApp +971 55 197 2617." },
   { tagName: "link", rel: "canonical", href: "https://manwithavanindubai.com/man-with-a-van-in-dubai" },
   { property: "og:title", content: "Man with a Van Dubai | Van with Driver for Moving & Delivery" },
   { property: "og:description", content: "Direct van service for luggage, boxes, furniture, small moves, hotels, airports and business deliveries across Dubai." },
