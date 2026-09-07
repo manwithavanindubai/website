@@ -139,7 +139,7 @@ export const meta: MetaFunction = () => [
   {
     name: "description",
     content:
-      "Boxes delivery Dubai for moving cartons, office boxes, storage boxes and business deliveries. Call or WhatsApp +971 52 806 5642.",
+      "Boxes delivery Dubai for moving cartons, office boxes, storage boxes and business deliveries. Call or WhatsApp +971 55 197 2617.",
   },
   {
     tagName: "link",
@@ -188,7 +188,7 @@ export default function BoxesDeliveryDubai() {
       "@type": "LocalBusiness",
       name: "Man with a Van Dubai",
       url: "https://manwithavanindubai.com",
-      telephone: "+971528065642",
+      telephone: "+971551972617",
       areaServed: "Dubai, United Arab Emirates",
     },
   };
