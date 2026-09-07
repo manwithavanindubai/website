@@ -1,7 +1,7 @@
 import type { LoaderFunctionArgs } from "@remix-run/cloudflare";
 
 export async function loader({ request }: LoaderFunctionArgs) {
-  const baseUrl = "https://manwithavanindubai.com";
+  const baseUrl = "https://www.manwithavanindubai.com";
 
   const pages = [
     "",
