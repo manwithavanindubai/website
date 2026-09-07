@@ -103,7 +103,7 @@ export default function ManWithAVanInDubai() {
       "@type": "LocalBusiness",
       name: "Man with a Van Dubai",
       url: "https://manwithavanindubai.com",
-      telephone: "+971528065642",
+      telephone: "+971551972617",
       areaServed: "United Arab Emirates",
     },
   };
