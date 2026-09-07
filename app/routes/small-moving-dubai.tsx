@@ -1,5 +1,4 @@
 import type { MetaFunction } from "@remix-run/cloudflare";
-
 const phoneDisplay = "+971 55 197 2617";
 const phoneLink = "tel:+971551972617";
 const whatsappLink = "https://wa.me/971551972617";
@@ -173,7 +172,7 @@ export const meta: MetaFunction = () => [
   {
     name: "description",
     content:
-      "Small moving service Dubai for studios, apartments, offices, boxes and furniture. Call or WhatsApp +971 52 806 5642 for a direct quote.",
+      "Small moving service Dubai for studios, apartments, offices, boxes and furniture. Call or WhatsApp +971 55 197 2617 for a direct quote.",
   },
   {
     tagName: "link",
@@ -222,7 +221,7 @@ export default function SmallMovingDubai() {
       "@type": "LocalBusiness",
       name: "Man with a Van Dubai",
       url: "https://manwithavanindubai.com",
-      telephone: "+971528065642",
+      telephone: "+971551972617",
       areaServed: "Dubai, United Arab Emirates",
     },
   };
